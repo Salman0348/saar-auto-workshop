@@ -1,0 +1,260 @@
+:root{
+    --primary-color: #6a4679;
+    --secondary-color: #bf3a65;
+    --appointment-color:#e40c52;
+    --tertiary-color:#FFA69E;
+    --active-color:#78223d;
+    --bg-color: #DDFFF7;
+    --white-color: white;
+    --box-shadow-1: 0 3px 15px rgba(0,0,0,.3);
+    --transition-all: all 0.4s ease-in-out;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+    color:inherit;
+}
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    height: 24vh;
+    background-color: var(--bg-color);
+}
+header .topHeader{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+ 
+}
+ul{
+    list-style-type: none;
+}
+.workingDays{
+    width: 180px;
+    background-color: #fff;
+    box-shadow: var(--box-shadow-1);
+    visibility: hidden;
+    position: absolute;
+    border-radius: 5px;
+    
+}
+.workingHrs:hover .workingDays{
+    visibility: visible;
+}
+.workingHrs{
+    position: relative;
+    
+}
+.workingDays>div{
+    padding: 0.5rem 0.7rem;
+    
+    
+}
+.socialLinks{
+    display: flex;
+    gap: 1rem;
+    font-size: 1.2rem;
+    
+    
+}
+.socialLinks i{
+    transition: all 0.3s;
+
+}
+.workingHrsHeading{
+    text-align: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.workingHrsHeading:hover .fa-caret-down{
+    visibility: hidden;
+}
+
+nav>ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 3rem;
+    color: var(--white-color);
+    background-color: var(--primary-color);
+}
+
+nav>ul>li{
+    height: 100%;
+    width: 100%;
+    gap: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+
+
+}
+nav ul li:hover{
+    background-color: var(--secondary-color);
+    
+}
+nav .appointment{
+    background-color: var(--appointment-color);
+}
+.menuItem{
+    position: relative;
+    
+}
+.menuSubItem{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: var(--primary-color);
+    z-index: 10;
+    top: 48px;
+    text-transform: uppercase;
+    width: 100%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    overflow: hidden;
+    visibility: hidden;
+}
+.menuItem ul>li{
+    padding: 5px 10px;
+   
+}
+.menuItem:hover .menuSubItem{
+    visibility: visible;
+}
+
+/* active btns */
+.activeItem{
+    background-color: var(--active-color);
+}
+
+
+/* **** */
+.menuItem i{
+    transition: 0.1s;
+}
+.menuItem:hover i{
+    /* display: none; */
+    visibility: hidden;
+}
+
+
+/* footer */
+
+footer{
+    min-height: 40vh;
+    background-color: var(--primary-color);
+    display: flex;
+    color: var(--white-color);
+    
+   
+}
+.footerSection1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.footerSection2{
+    width: 100%;
+}
+.footerSection3{
+    width: 100%;
+   padding-left: 1rem;
+}
+.footerSection4{
+    
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footerSection1 .logoText{
+    font-size: 2rem;
+    font-weight: 900;
+    color: var(--tertiary-color);
+    position: relative;
+    margin: 10px 0 0 40%;
+    align-items: center;
+    width: 100%;
+}
+.footerSection1 .smallText{
+    font-size: 0.7rem;
+    font-weight: 700;
+    position: absolute;
+    top: 24px;
+    left: 21px;
+    color: var(--bg-color);
+    
+    
+    
+}
+.footerSection1 .socialLinks{
+    padding-top: 3rem;
+    color: var(--white-color);
+    
+}
+.footerSection1 .socialLinks i{
+    font-size: 1.5rem;
+    transition: all 0.2s;
+}
+.socialLinks i:hover{
+    color: var(--tertiary-color);
+    transform: scale(2);
+
+}
+.footerSection2{
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.footerSection2  .footer2Hdng{
+    font-size: 1.3rem ;
+    font-weight: bold;
+    color: var(--tertiary-color);
+}
+
+.footerSection2  i{
+    font-size: 1.3rem;
+    padding-right: 5px;
+    
+}
+.footerSection2  p{
+    padding-left: 22px;
+}
+.footerSection3{
+    padding: 15px 10px;
+}
+.footerSection3 div{
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--tertiary-color);
+}
+.footerSection3 ul{
+    padding-left: 8px;
+}
+.footerSection3 ul li{
+    padding-top: 5px;
+}
+.footerSection3 ul li:hover{
+    color:var(--bg-color)
+}
+
+.footerSection4 iframe{
+    border-radius: 5px;
+}
