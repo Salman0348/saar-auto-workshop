@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SAAR Auto Repair Workshop</title>
     <link rel="stylesheet" href="header-footer.css" />
-    <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/x-icon" href="/imgs/favIcon.svg" />
     <!-- google fonts poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,11 +13,15 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="oilchange.css">
     <!-- font awesome icons -->
     <script
       src="https://kit.fontawesome.com/100f11453f.js"
       crossorigin="anonymous"
     ></script>
+    
+    <!-- font awesome icons -->
+   <link rel="stylesheet" href="AC repair.css">
   </head>
   <body style="font-family: Poppins, sans-serif">
     <div class="home">
@@ -64,15 +67,15 @@
         </div>
         <nav>
           <ul class="menu">
-            <li class="menuItem activeItem"><a href="index.html">Home</a></li>
-            <li class="menuItem">
+            <li class="menuItem "><a href="index.html">Home</a></li>
+            <li class="menuItem activeItem">
               <a href="services.html">Services</a><i class="fa-solid fa-caret-down"></i>
               <ul class="menuSubItem">
                 <li><a href="">All Services</a></li>
                 <li><a href="engineService.html">Engine Repair</a></li>
-                <li><a href="AC repair.html">Auto A/C Repair</a></li>
+                <li ><a href="AC repair.html">Auto A/C Repair</a></li>
                 <li><a href="batteryService.html">Battery Service</a></li>
-                <li><a href="oilChange.html">Oil Change</a></li>
+                <li id="oilServiceNav"><a href="">Oil Change</a></li>
                 <li><a href="">Brake Service</a></li>
                 <li><a href="">Wheel Alignment</a></li>
               </ul>
@@ -95,10 +98,10 @@
               <a href="">About Us</a><i class="fa-solid fa-caret-down"></i>
               <ul class="menuSubItem">
                 <li><a href="">All Services</a></li>
-                <li><a href="engineService.html">Engine Repair</a></li>
-                <li><a href="AC repair.html">Auto A/C Repair</a></li>
-                <li><a href="batteryService.html">Battery Service</a></li>
-                <li><a href="oilChange.html">Oil Change</a></li>
+                <li><a href="">Engine Repair</a></li>
+                <li><a href="">Auto A/C Repair</a></li>
+                <li><a href="">Battery Service</a></li>
+                <li><a href="">Oil Change</a></li>
                 <li><a href="">Brake Service</a></li>
                 <li><a href="">Wheel Alignment</a></li>
               </ul>
@@ -110,129 +113,25 @@
           </ul>
         </nav>
       </header>
-      <section class="homeWelcome" >
-          <div class="container">
-            <h1>WELCOME to <div class="shopName"><span class="name">SAAR</span> <span class="service"> Auto Repair Workshop!</span></div></h1>
-            <p>
-              Your ride matters. At SAAR Auto Repair Workshop, we're dedicated to keeping you on the road with top-quality service. From routine maintenance to precision repairs, our skilled technicians and advanced equipment have you covered. Trust SAAR for all your automotive needs.
-            </p>
-      </section>
-      <section class="totallServices">
-        <div class="specialOffers">
-          <h1>Special Offers</h1>
-          <div class="offerImgs">
-            <div class="firstOffer" >
-              <img src="imgs/oilChange.jpg" alt="oil change" >
-              <div class="offerDetail">
-                <span>FREE</span>
-                <h1> Oil Change</h1>
-                <p>
-                  Enjoy a free oil change with our expert technicians, providing top-notch service and peace of mind for your vehicle's maintenance needs.
-                </p>
-              </div>
-            </div>
-            <div class="secondOffer">
-              <img src="imgs/mechanic.jpg" alt="labor cost">
-              <div class="offerDetail">
-                <span>10%</span>
-                <h1> Off Labor charge</h1>
-                <p>
-                  Get 10% off on labor charges for any auto repair service, saving you money while ensuring top-quality workmanship at our workshop.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="homeServicesContainer">
-          <div class="divider"> <hr></div>
-          <div class="header">
-            <h1>KEY SERVICES OFFERED</h1>
-            <a href=""><span>View All Services</span></a>
-          </div>
-          <div class="serviceItems">
-            <div class="row">
-              <div class="serviceItem darkBg" >
-                <img src="imgs/bg4.jpg" alt="engine repair" >
-                <a href="">
-                  <h1 >
-                    Engine Services
-                  </h1>
-              </a>
-              </div>
-              <div class="serviceItem serviceItems2 ">
-                <div class="darkBg"><img src="imgs/ac.jpg" alt="ac repair" >
-                  <a href="">
-                    <h1>A/C Services</h1>
-                  </a>
-                </div>
-                <div class="darkBg"><img src="imgs/carBattery.jpg" alt="battery repair" >
-                  <a href="">
-                    <h1 >
-                      Battery Services
-                    </h1>
-                </a>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="serviceItem serviceItems2 ">
-                <div class="darkBg"><img src="imgs/oilChange.jpg" alt="oil change" >
-                  <a href="">
-                    <h1 >
-                      Oil Change
-                    </h1>
-                </a>
-                </div>
-                <div class="darkBg"><img src="imgs/carBrake.jpg" alt="brake service" >
-                  <a href="">
-                    <h1 >
-                      Brake Service
-                    </h1>
-                </a>
-                </div>
-              </div>
-              <div class="serviceItem darkBg"><img src="imgs/bg5.jpg" alt="wheel alignment">
-                <a href="">
-                  <h1 >
-                    Wheel Alignment
-                  </h1>
-              </a>
-              </div>
-            </div>
-            </div>
-        </div>
-      </section>
-      <section class="carTips">
-        <div class="divider"> <hr></div>
-          <h1>Car Tips</h1>
-        <div class="tipsContainer">
-          <div class="tipItem tip1">
-            <h1>
-              Regular maintenance is key!
-            </h1>
-            <p>
-               Schedule oil changes, tire rotations, and fluid checks to keep your car running smoothly.
-            </p>
-          </div>
-          <div class="tipItem tip2">
-            <h1>
-              Stay safe!
-            </h1>
-            <p>
-              On the road by checking your tire pressure monthly and replacing worn-out tires promptly.
-            </p>
-          </div>
-          <div class="tipItem tip3">
-            <h1>
-              Maximize fuel efficiency!
-            </h1>
-            <p>
-               By maintaining a steady speed on highways and removing excess weight from your vehicle.
-            </p>
-          </div>
-          
-        </div>
-      </section>
+      <!-- start: your code goes here -->
+     
+    <div class="oilServices">
+        <div><h1>OIL CHANGE IN SAAR</h1> </div><br>
+        <div class="subOil"><h2>OIL CHANGE: A CRUCIAL SERVICE</h2></div>
+    <div class="subOil1"><h1>Prevention Is Key</h1></div>
+    <div class="sub1"><p>Preventive maintenance services are key to keeping your vehicle in good mechanical condition. Specifically, regular oil changes are crucial to keeping your transportation running reliably. Count on the ASE-certified technicians at SAAR Auto Service  for that and other services for all makes and models. We’re here to suit your convenience with extended hours of operation spanning sat-thu: 8am – 6pm. We’re easy to find, too, at SAAR. You can make an appointment for an oil change online or by calling us at 0348-9220242. SAAR Auto Service looks forward to becoming your one-stop complete auto shop.. An efficiently working A/C system is a must-have during hot summer days. If your car’s HVAC system isn’t functioning correctly, the cabin can become a sweltering—and even dangerous—environment. Fortunately, help is just a phone call away. The ASE-certified car A/C repair mechanics at SAAR Auto Service have the tools and training to help Chicago motorists beat the heat. We can repair and maintain cooling systems in all makes and models, including domestic and import vehicles. We also back our car A/C repairs with TechNet 24/24 and NAPA 24/24 warranties. This ensures you will keep your cool wherever you go. Have questions? Our staff will gladly address any concerns you might have. If your car’s A/C system is blowing warm air, smells muggy, or makes strange noises, call our auto repair shop today at 0342-9220242 to book an appointment. We are open Saturday through thursday, sat-thu: 8am – 6pm, and  Closed Friday.</p>
+    <div class="image"><img src="oilchange.png"></div>
+
+
+<div class="sub2"><h1>The Details Of Oil Change</h1></div>
+<div class="sub3"><p>We care about your transportation as much as you do, so we take our role as your preventive maintenance partner seriously. Motor oil grabs and suspends dirt, absorbs some of the heat from the engine, and, of course, lubricates the moving metal parts. These functions allow your engine to operate without undue damage. Unfortunately, oil begins to break down as it ages, leaving it less able to protect as effectively as it once did. Old oil can lead to premature wear of internal engine components. Furthermore, the aged lubricant may combine with dirt to form sludge. This can result in internal clogs or, in severe cases, show on the external engine surfaces. It’s necessary to change the filter with every oil change, too. This disposable part keeps debris from recirculating through the engine. Once the filter’s fibrous folds are full, however, the dirty filter can allow dirt to seep by. When you entrust your vehicle to us for an oil change, we’ll attend to all the important details for you. We’ll follow the manufacturer’s recommendations for the optimal viscosity/weight for the model you drive. We’ll also advise you on recommendations for oil type. These are conventional, full synthetic, synthetic blend, or high mileage. Every oil change includes a complimentary check of other fluids, brakes, and tirest.</p></div>
+<div class="image"><img src="oilcange2.png"></div>
+<div class="oilDis"><h1>A Great Place For Service</h1>
+<div class="oilsubDis"><p>SAAR Auto Service is a great place to get your oil changed. We aim always to take good care of our customers, putting your needs ahead of our profit margin. We center our work on our values of loyalty, honesty, accountability, integrity, teamwork, innovation, and passion. That translates into the highest level of service for you and your automobile. For example, we provide a digital inspection at no additional charge, and we’re glad to take the time to explain your vehicle’s mechanical needs to you. What’s more, when the time comes for repairs beyond the scope of preventive maintenance, you can feel confident knowing that you’ve selected the right facility. We’ve been a part of our shared community’s fabric for more than 30 years and are a member of the Automotive Service Association. Our work is covered by a solid 24-month/24,000-mile nationwide warranty through the NAPA and TechNet networks. Your local provider for mechanical services, including oil changes, is SAAR Auto Service.</p></div>
+</div>
+</div></div>
+   
+      <!-- end -->
       <footer>
         <div class="footerSection1">
           <div class="logoText">

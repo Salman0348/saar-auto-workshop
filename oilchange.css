@@ -1,0 +1,31 @@
+#oilServiceNav{
+    background-color: var(--secondary-color);
+}
+.oilServices{
+    padding: 50px 60px;
+    margin: left;
+    font-size: xx-large; 
+}
+.subOil{
+    color: darkred;
+}
+.subOil1{
+    font-size: large;
+}
+.image img{
+padding: 20px 20px;
+    border-radius:5px;
+    width: 60%;
+    height: 300px;
+    transition: all 0.4s ease;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.image img:hover{
+    transform: scale(1.2);
+}
+.oilServices .sub3{
+   font-size: large;
+}
+.oilServices.oilsubDis{
+font-size: large;
+}

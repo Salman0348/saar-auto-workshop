@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SAAR Auto Repair Workshop</title>
     <link rel="stylesheet" href="header-footer.css" />
-    <link rel="stylesheet" href="index.css">
     <link rel="icon" type="image/x-icon" href="/imgs/favIcon.svg" />
     <!-- google fonts poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -14,11 +13,15 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="engineService.css">
     <!-- font awesome icons -->
     <script
       src="https://kit.fontawesome.com/100f11453f.js"
       crossorigin="anonymous"
     ></script>
+    
+    <!-- font awesome icons -->
+   <link rel="stylesheet" href="battery.css">
   </head>
   <body style="font-family: Poppins, sans-serif">
     <div class="home">
@@ -64,15 +67,15 @@
         </div>
         <nav>
           <ul class="menu">
-            <li class="menuItem activeItem"><a href="index.html">Home</a></li>
-            <li class="menuItem">
+            <li class="menuItem "><a href="index.html">Home</a></li>
+            <li class="menuItem activeItem">
               <a href="services.html">Services</a><i class="fa-solid fa-caret-down"></i>
               <ul class="menuSubItem">
                 <li><a href="">All Services</a></li>
-                <li><a href="engineService.html">Engine Repair</a></li>
+                <lis><a href="engineService.html">Engine Repair</a></li>
                 <li><a href="AC repair.html">Auto A/C Repair</a></li>
-                <li><a href="batteryService.html">Battery Service</a></li>
-                <li><a href="oilChange.html">Oil Change</a></li>
+                <li class="batteryServiceNav"><a href="">Battery Service</a></li>
+                <li><a href="">Oil Change</a></li>
                 <li><a href="">Brake Service</a></li>
                 <li><a href="">Wheel Alignment</a></li>
               </ul>
@@ -95,10 +98,10 @@
               <a href="">About Us</a><i class="fa-solid fa-caret-down"></i>
               <ul class="menuSubItem">
                 <li><a href="">All Services</a></li>
-                <li><a href="engineService.html">Engine Repair</a></li>
-                <li><a href="AC repair.html">Auto A/C Repair</a></li>
-                <li><a href="batteryService.html">Battery Service</a></li>
-                <li><a href="oilChange.html">Oil Change</a></li>
+                <li><a href="">Engine Repair</a></li>
+                <li><a href="">Auto A/C Repair</a></li>
+                <li><a href="">Battery Service</a></li>
+                <li><a href="">Oil Change</a></li>
                 <li><a href="">Brake Service</a></li>
                 <li><a href="">Wheel Alignment</a></li>
               </ul>
@@ -110,129 +113,26 @@
           </ul>
         </nav>
       </header>
-      <section class="homeWelcome" >
-          <div class="container">
-            <h1>WELCOME to <div class="shopName"><span class="name">SAAR</span> <span class="service"> Auto Repair Workshop!</span></div></h1>
-            <p>
-              Your ride matters. At SAAR Auto Repair Workshop, we're dedicated to keeping you on the road with top-quality service. From routine maintenance to precision repairs, our skilled technicians and advanced equipment have you covered. Trust SAAR for all your automotive needs.
-            </p>
-      </section>
-      <section class="totallServices">
-        <div class="specialOffers">
-          <h1>Special Offers</h1>
-          <div class="offerImgs">
-            <div class="firstOffer" >
-              <img src="imgs/oilChange.jpg" alt="oil change" >
-              <div class="offerDetail">
-                <span>FREE</span>
-                <h1> Oil Change</h1>
-                <p>
-                  Enjoy a free oil change with our expert technicians, providing top-notch service and peace of mind for your vehicle's maintenance needs.
-                </p>
-              </div>
-            </div>
-            <div class="secondOffer">
-              <img src="imgs/mechanic.jpg" alt="labor cost">
-              <div class="offerDetail">
-                <span>10%</span>
-                <h1> Off Labor charge</h1>
-                <p>
-                  Get 10% off on labor charges for any auto repair service, saving you money while ensuring top-quality workmanship at our workshop.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="homeServicesContainer">
-          <div class="divider"> <hr></div>
-          <div class="header">
-            <h1>KEY SERVICES OFFERED</h1>
-            <a href=""><span>View All Services</span></a>
-          </div>
-          <div class="serviceItems">
-            <div class="row">
-              <div class="serviceItem darkBg" >
-                <img src="imgs/bg4.jpg" alt="engine repair" >
-                <a href="">
-                  <h1 >
-                    Engine Services
-                  </h1>
-              </a>
-              </div>
-              <div class="serviceItem serviceItems2 ">
-                <div class="darkBg"><img src="imgs/ac.jpg" alt="ac repair" >
-                  <a href="">
-                    <h1>A/C Services</h1>
-                  </a>
-                </div>
-                <div class="darkBg"><img src="imgs/carBattery.jpg" alt="battery repair" >
-                  <a href="">
-                    <h1 >
-                      Battery Services
-                    </h1>
-                </a>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="serviceItem serviceItems2 ">
-                <div class="darkBg"><img src="imgs/oilChange.jpg" alt="oil change" >
-                  <a href="">
-                    <h1 >
-                      Oil Change
-                    </h1>
-                </a>
-                </div>
-                <div class="darkBg"><img src="imgs/carBrake.jpg" alt="brake service" >
-                  <a href="">
-                    <h1 >
-                      Brake Service
-                    </h1>
-                </a>
-                </div>
-              </div>
-              <div class="serviceItem darkBg"><img src="imgs/bg5.jpg" alt="wheel alignment">
-                <a href="">
-                  <h1 >
-                    Wheel Alignment
-                  </h1>
-              </a>
-              </div>
-            </div>
-            </div>
-        </div>
-      </section>
-      <section class="carTips">
-        <div class="divider"> <hr></div>
-          <h1>Car Tips</h1>
-        <div class="tipsContainer">
-          <div class="tipItem tip1">
-            <h1>
-              Regular maintenance is key!
-            </h1>
-            <p>
-               Schedule oil changes, tire rotations, and fluid checks to keep your car running smoothly.
-            </p>
-          </div>
-          <div class="tipItem tip2">
-            <h1>
-              Stay safe!
-            </h1>
-            <p>
-              On the road by checking your tire pressure monthly and replacing worn-out tires promptly.
-            </p>
-          </div>
-          <div class="tipItem tip3">
-            <h1>
-              Maximize fuel efficiency!
-            </h1>
-            <p>
-               By maintaining a steady speed on highways and removing excess weight from your vehicle.
-            </p>
-          </div>
-          
-        </div>
-      </section>
+      <!-- start: your code goes here -->
+     
+    <div class="Services">
+        <div><h1>BATTERY SERVICE IN SAAR</h1> </div><br>
+        <div class="subservice"><h2>YOUR ONE-STOP FOR BATTERY REPLACEMENTS & TESTING</h2></div>
+    <div class="sub"><h1>Expert Battery Services For Domestic And Foreign Vehicles</h1></div>
+    <div class="sub1"><p> Don’t wait for your battery to die before you bring your car to the auto repair specialists at SAAR Repair Services. Our auto mechanics would much prefer to test your battery before you find yourself stranded on the side of the road. A low whining sound is one indication that something is amiss with your battery. Another is that after jumping your battery, your car won’t start up again after you turn it off. The auto mechanics at SAAR Auto Repair Services have the education, experience, and state-of-the-art equipment to quickly assess whether it’s genuinely your battery or if it’s another issue and gets you back on the road. We care about your safety and will always put you first. </p>
+    <div class="image"><img src="battery.avif"></div>
+
+</div>
+<div class="sub2"><h1>Quality Care & Longterm Support</h1></div>
+<div class="sub3"><p>We are in business to serve you and to service your car. We care about our relationship with you and work hard to establish a long-term relationship rather than to make a quick buck. None of us at SAAR Auto Repair  will hold it against you if you go elsewhere for auto repair service, but we will welcome you back with open arms! We are here for you when you need a new battery, an oil change, or to fix a leak. For instance, take a look at this recent 5-star review from one of our happy customers: “Once again,SAAR saves my butt. I got a leak “fixed” down the street at the Quick Oil place, turns out, it wasn’t fixed. Should never have strayed! They fixed me up in a day or two, notified me of other more serious issues, and got me back on track in no time. This place will be my forever mechanic! Dave and Nick are easy to talk to, honest folks who care about their quality of work.” — Andi C..</p></div>
+<div class="image"><img src="battery2.avif"></div>
+<div class="sub4"><h2>Battery Services You Can Trust</h2>
+<div class="sub4b"><p>At SAAR Auto Repair Service, you can count on us to perform the best service possible for any battery issue your car is experiencing. Our staff is warm and professional, with extensive training to ensure your experience with us is the best. Schedule an appointment! We are conveniently located at General Bus Stand Timergara. </p>
+</div>
+</div>
+</div>
+   
+      <!-- end -->
       <footer>
         <div class="footerSection1">
           <div class="logoText">

@@ -1,0 +1,58 @@
+#engineServiceNav{
+    background-color: (--secondary-color)}
+.services{
+    
+    padding:50px 60px;
+    margin: auto;
+}
+.serviceTop{
+    font-size: medium;
+    width: 100%;
+    justify-content: space-between;
+    
+}
+.ServicesSection{
+    width:fit-content;
+    font-style: normal;
+    width: 100%;
+    justify-content: space-around;
+}
+.subservice{
+    /* width: 80%; */
+    text-align:justify;
+    font-size: 20px;
+}
+.subservice img{
+    border-radius: 5px;
+    width: 80%;
+    height: 300px;
+    transition: all 0.4s ease;
+    
+}
+.subservice .image{
+    overflow: hidden;
+    
+    /* border: 5px solid red; */
+
+}
+.subservice img:hover{
+    transform: scale(1.2);
+    
+}
+.subservice2Dis .image2{
+    overflow: hidden;
+    /* border: 5px solid red; */
+
+}
+.subservice2Dis .image2 img{
+    padding: 20px 20px;
+    border-radius: 10px;
+    width: 100%;
+    height: 200px;
+    transition: all 0.3s ease;
+   
+    
+}
+.subservice2Dis .image2 img:hover{
+    transform: scale(1.2);
+}
