@@ -139,7 +139,7 @@ nav .appointment{
 
 /* active btns */
 .activeItem{
-    background-color: var(--active-color);
+    background-color: var(--active-color) !important;
 }
 
 
