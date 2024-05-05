@@ -1,0 +1,31 @@
+.brakeServiceNav{
+    background-color: var(--secondary-color);
+}
+.BrakeServices{
+    padding: 50px 60px;
+    margin: left;
+    font-size: large; 
+}
+.Brakesubservice{
+    color: darkred;
+}
+.Brakesub1{
+    font-size: large;
+}
+.image img{
+padding: 20px 20px;
+    border-radius:5px;
+    width: 60%;
+    height: 300px;
+    transition: all 0.4s ease;
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.image img:hover{
+    transform: scale(1.2);
+}
+.brakeServices .sub3{
+   font-size: large;
+}
+.Brakesub1 .brakesub4b{
+    font-size: large
+}
