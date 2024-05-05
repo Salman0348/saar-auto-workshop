@@ -1,0 +1,275 @@
+.homeWelcome{
+    height: 76vh;
+    background-image: url(imgs/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    animation: change 30s infinite ease-in-out;
+    
+}
+
+body{
+    background-color: #eef8f5;
+}
+.homeWelcome::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    background-color:rgba(0, 0, 0, 0.43);
+    width: 100%;
+    height:100%;
+    
+}
+.homeWelcome .container{
+    color: white;
+    position: absolute;
+    width: 80%;
+    top: 20%;
+    left: 10%;
+    /* margin: 5rem 8rem; */
+}
+.homeWelcome h1{
+    font-size: 2rem;
+}
+.homeWelcome .name{
+    font-size: 5rem;
+    color: #d42a61;
+}
+.homeWelcome .service{
+    font-size: 1rem;
+    color: var(--tertiary-color);
+}
+.homeWelcome .shopName{
+    border-bottom: 3px solid #864b9f;
+    display: inline;
+
+}
+.homeWelcome p{
+    font-size: 1.1rem;
+    padding-left: 2rem;
+}
+@keyframes change {
+    0%{
+        background-image: url(imgs/bg1.jpg);
+    }
+    20%{
+        background-image: url(imgs/bg2.jpg);
+    }
+    40%{
+        background-image: url(imgs/bg3.jpg);
+    }
+    60%{
+        background-image: url(imgs/bg4.jpg);
+    }
+    80%{
+        background-image: url(imgs/bg5.jpg);
+    }
+}
+
+
+/* services */
+.totallServices{
+    padding: 4rem 3rem;
+    padding-bottom: 3rem;
+}
+.offerImgs{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+
+.specialOffers img{
+    height: 100%;
+    position: relative;
+    transition: all 0.3s ease;
+    
+}
+.specialOffers>h1{
+    font-size: 2rem;
+    text-transform: uppercase;
+    padding-bottom: 1rem;
+}
+.offerImgs>div{
+    height: 350px;
+    position: relative;
+}
+
+.offerImgs>div::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.43);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.offerImgs>div .offerDetail{
+    position: absolute;
+    top: 0;
+    color: var(--white-color);
+    z-index: 2;
+    padding: 4rem 2rem;
+    height: 100%;
+    cursor: pointer;
+
+}
+.offerDetail span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    margin-bottom: 0.6rem;
+    transition: all 0.3s ease;
+
+    
+}
+.offerDetail h1{
+    text-transform: uppercase;
+    
+}
+.offerImgs>div{
+    overflow: hidden;
+    
+}
+
+.offerImgs>div:hover img{
+   transform: scale(1.2);
+}
+.offerImgs>div:hover span{
+   background-color: var(--primary-color);
+}
+
+/* home services */
+.serviceItems{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+.serviceItems img{
+    width: 100%;
+    height: 100%;
+    transition: all 0.3s ease;
+   
+}
+.serviceItems2{
+    display: flex;
+    gap: 1rem;
+}
+.row{
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.serviceItem{
+    height: 300px;
+    width: 525px;
+    position: relative;
+}
+.homeServicesContainer{
+    padding-top: 5rem;
+}
+.homeServicesContainer .header{
+    display: flex;
+    justify-content: space-between;
+}
+.homeServicesContainer .header>h1{
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+.homeServicesContainer .header span{
+    width: 200px;
+    height: 50px;
+    background-color: var(--secondary-color);
+    color: var(--white-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 5px;
+}
+.homeServicesContainer .header span:hover{
+    background-color: #b23a61;
+}
+.darkBg{
+    position: relative;
+    overflow: hidden;
+    
+}
+.darkBg::before{
+    content: "";
+    background-color: rgba(0, 0, 0, 0.23);
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.darkBg h1{
+    color: var(--white-color);
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-transform: uppercase;
+
+}
+.darkBg:hover img{
+    transform: scale(1.2);
+}
+
+
+/* hr */
+.divider{
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+    position: relative;
+}
+.divider hr{
+    position: absolute;
+    bottom: 2rem;
+    width: 350px;
+    height: 2px;
+    border-radius: 2px;
+    background-color: #635d65;
+}
+
+/* tips section */
+.carTips{
+    margin: 2rem 3rem;
+}
+.carTips>h1{
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding-bottom: 1rem;
+}
+.tipsContainer{
+    display: flex;
+    gap: 2rem;
+    
+    margin-bottom: 6rem;
+    
+}
+.tipsContainer .tipItem{
+    border: 1px solid var(--secondary-color);
+    padding: 2rem 3rem;
+    box-shadow: var(--box-shadow-1);
+    transition: 0.2s;
+    
+}
+.tipsContainer .tipItem:hover{
+    background-color: #d9dedd;
+}
