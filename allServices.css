@@ -1,0 +1,38 @@
+body{
+    background-color: #eef8f5;
+}
+.allServicesSect ul{
+    list-style-type: disc;
+    padding-left: 15px;
+}
+.allServicesSect{
+    padding: 3rem 1rem 3rem 3rem;
+}
+.allServicesSect>h1{
+    font-size: 2.3rem;
+    padding-bottom: 1rem;
+}
+.allServicesCon{
+    display: flex;
+}
+.leftServicesCon{
+    width: 75vw;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+/* .rightServicesCon{
+    min-width: 400px;
+} */
+.rightServicesCon li{
+    padding-bottom: 0.4rem;
+    /* color: var(--secondary-color); */
+    list-style-type: none;
+    /* font-size: 1rem; */
+}
+.rightServicesCon a:hover{
+    color: var(--secondary-color);
+}
+.rightServicesCon h1{
+    color: var(--secondary-color);
+}

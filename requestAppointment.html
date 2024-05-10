@@ -68,10 +68,10 @@
           <ul class="menu">
             <li class="menuItem"><a href="index.html">Home</a></li>
             <li class="menuItem">
-              <a href="services.html">Services</a
+              <a href="allServices.html">Services</a
               ><i class="fa-solid fa-caret-down"></i>
               <ul class="menuSubItem">
-                <li><a href="">All Services</a></li>
+                <li><a href="allServices.html">All Services</a></li>
                 <li><a href="engineService.html">Engine Repair</a></li>
                 <li><a href="AC repair.html">Auto A/C Repair</a></li>
                 <li><a href="batteryService.html">Battery Service</a></li>
@@ -83,23 +83,20 @@
             <li class="menuItem">
               <a href="">Vehicles</a><i class="fa-solid fa-caret-down"></i>
               <ul class="menuSubItem">
-                <li><a href="">toyota Service</a></li>
-                <li><a href="">Suzuki Service</a></li>
-                <li><a href="">Honda Service</a></li>
-                <li><a href="">Hyudai Service</a></li>
-                <li><a href="">Bmw Service</a></li>
-                <li><a href="">AudiService</a></li>
-                <li><a href="">Land Cruiser Service</a></li>
-                <li><a href="">Lexus Service</a></li>
-                <li><a href="">Hummer Service</a></li>
+                <li><a href="toyotaService.html">toyota Service</a></li>
+                <li><a href="suzukiService.html">Suzuki Service</a></li>
+                <li><a href="hondaService.html">Honda Service</a></li>
+                <li><a href="hyundaiService.html">Hyudai Service</a></li>
+                <li><a href="bmwService.html">Bmw Service</a></li>
+                <li><a href="AudiService.html">AudiService</a></li>
+                <li><a href="hummerService.html">Hummer Service</a></li>
               </ul>
             </li>
             <li class="menuItem">
               <a href="">About Us</a><i class="fa-solid fa-caret-down"></i>
               <ul class="menuSubItem">
                 <li><a href="ownersInfo.html">Owners Info</a></li>
-                <li><a href="">Cotact Us</a></li>
-                <li><a href=""> Developed By</a></li>
+                <li><a href="contact.html">Cotact Us</a></li>
               </ul>
             </li>
             <li class="menuItem"><a href="">FAQ's</a></li>
@@ -119,7 +116,7 @@
                 <h1>Your Info</h1>
                 <input
                   type="text"
-                  placeholder="Your Name"
+                  placeholder="Your Name*"
                   name="customerName"
                   required
                 />
@@ -129,7 +126,7 @@
                     id="phone"
                     name="customerPhone"
                     pattern="[0-9]{4}-[0-9]{7}"
-                    placeholder="Phone Number"
+                    placeholder="Phone Number*"
                     required
                   />
                   <p>required Format 03XX-XXXXXXXX</p>
@@ -137,7 +134,7 @@
                 <input type="email" name="customerEmail" placeholder="Email" />
               </div>
               <div class="dateOfWork">
-                <h1>Visit date</h1>
+                <h1>Visit date <span>*</span></h1>
                 <input type="date" required />
                 <input type="time" required />
                 <h1>car ready date</h1>
@@ -156,17 +153,19 @@
                 <input
                   type="text"
                   name="customerCarMake"
-                  placeholder="Vehicle Make"
+                  placeholder="Vehicle Make*"
+                  required
                 />
                 <input
                   type="text"
                   name="customerCarModel"
-                  placeholder="Vehicle Model"
+                  placeholder="Vehicle Model*"
+                  required
                 />
               </div>
               <div class="carProblem">
                 <textarea name="carProblem" cols="50" rows="7">
-                      Tell us about your car problem/maintenance etc...
+Tell us about your car problem/maintenance etc...
                 </textarea>
               </div>
               <div>
@@ -178,65 +177,87 @@
       </section>
       <!-- end -->
       <footer>
-        <div class="footerSection1">
-          <div class="logoText">
-            SAAR<span class="smallText"><br />AUTO REPAIR SERVICE</span>
+        <div class="upperFooter">
+          <div class="footerSection1">
+            <div class="logoText">
+              SAAR<span class="smallText"><br />AUTO REPAIR SERVICE</span>
+            </div>
+            <ul class="socialLinks">
+              <li>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-regular fa-envelope"></i></a>
+              </li>
+            </ul>
           </div>
-          <ul class="socialLinks">
-            <li>
-              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-regular fa-envelope"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div class="footerSection2">
-          <div class="address">
-            <i class="fa-solid fa-location-dot"></i
-            ><span class="footer2Hdng">Address</span><br />
-            <p>Near General Bus Stand Timergara, Dir Lower, KPK, Pakistan.</p>
-          </div>
-          <div class="footerHrs">
-            <div class="">
-              <span
-                ><i class="fa-solid fa-clock"></i
-                ><span class="footer2Hdng">Working Hours</span></span
-              ><br />
-              <p>
-                Sat-Thu | 8:00AM-6:00PM<br />
-                <span>Closed on Friday</span>
-              </p>
+          <div class="footerSection2">
+            <div class="address">
+              <i class="fa-solid fa-location-dot"></i
+              ><span class="footer2Hdng">Address</span><br />
+              <p>Near General Bus Stand Timergara, Dir Lower, KPK, Pakistan.</p>
+            </div>
+            <div class="footerHrs">
+              <div class="">
+                <span
+                  ><i class="fa-solid fa-clock"></i
+                  ><span class="footer2Hdng">Working Hours</span></span
+                ><br />
+                <p>
+                  Sat-Thu | 8:00AM-6:00PM<br />
+                  <span>Closed on Friday</span>
+                </p>
+              </div>
+            </div>
+            <div class="address">
+              <i class="fa-solid fa-phone"></i
+              ><span class="footer2Hdng">Contact Us</span><br />
+              <p><a href="tel:03489220242">0348-9220242</a></p>
             </div>
           </div>
-          <div class="address">
-            <i class="fa-solid fa-phone"></i
-            ><span class="footer2Hdng">Contact Us</span><br />
-            <p><a href="tel:03489220242">0348-9220242</a></p>
+          <div class="footerSection3">
+            <div>Quick Links</div>
+            <ul>
+              <li><a href="allServices.html">Services</a></li>
+              <li><a href="toyotaService.html">Vehicles</a></li>
+              <li><a href="ownersInfo.html">About Us</a></li>
+              <li><a href="">FAQ's</a></li>
+            </ul>
+          </div>
+          <div class="footerSection4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.3203295988874!2d71.83820663874663!3d34.82270020071062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dbf3c97a6ea9d9%3A0xc4fc67209af41b01!2sGeneral%20Bus%20Stand%20Timergara!5e0!3m2!1sen!2s!4v1714825296338!5m2!1sen!2s"
+              width="300"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
-        <div class="footerSection3">
-          <div>Quick Links</div>
-          <ul>
-            <li><a href="">Services</a></li>
-            <li><a href="">Vehicles</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">FAQ's</a></li>
-          </ul>
-        </div>
-        <div class="footerSection4">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.3203295988874!2d71.83820663874663!3d34.82270020071062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dbf3c97a6ea9d9%3A0xc4fc67209af41b01!2sGeneral%20Bus%20Stand%20Timergara!5e0!3m2!1sen!2s!4v1714825296338!5m2!1sen!2s"
-            width="300"
-            height="200"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div class="lowerFooter">
+          <hr />
+          <div class="lowerFooterContent">
+            <div class="developersInfo">
+              <span>Developed by: </span
+              ><a
+                href="imgs/Salman-Ud-Din-Front-End-Developer.pdf"
+                target="_blank"
+                >Salman</a
+              ><a
+                href="imgs/Arsalan-Khan-Front-End-Developer.pdf"
+                target="_blank"
+                >Arsalan</a
+              ><a href="">Naeem</a>
+            </div>
+            <div class="copyRight">
+              &copy; SAAR auto workshop. All rights reserved.
+            </div>
+          </div>
         </div>
       </footer>
     </div>
