@@ -1,0 +1,60 @@
+.companyWiseServiceCon{
+    display: flex;
+    gap:3rem;
+}
+.companyWiseServiceCon ul{
+    list-style-type: disc;
+    padding-left: 15px;
+}
+
+.companyWiseServiceSect{
+    padding: 3rem 3rem;
+}
+.companyWiseServiceSect>h1{
+    text-transform: uppercase;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+}
+.serviceImg{
+    
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    
+    
+}
+
+.serviceImg img{
+    width: 320px;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow-1);
+
+}
+.serviceDetail{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+}
+.serviceImg  a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 100%;
+    height: 50px;
+    color: var(--white-color);
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-radius: 10px;
+    text-transform: uppercase;
+    background-color: var(--appointment-color);
+
+}
+.serviceImg  a:hover{
+    background-color: var(--secondary-color);
+
+}
+.serviceImg a i{
+    /* color: black; */
+    padding-bottom: 3px;
+}

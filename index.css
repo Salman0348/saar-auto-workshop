@@ -195,7 +195,7 @@ body{
     border-radius: 5px;
 }
 .homeServicesContainer .header span:hover{
-    background-color: #b23a61;
+    background-color: var(--primary-color);
 }
 .darkBg{
     position: relative;
