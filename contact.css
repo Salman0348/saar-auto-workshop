@@ -41,7 +41,7 @@ form input,textarea{
     padding: 5px 7px;
     
     font-size: 1rem;
-    border: none;
+    border: 1px solid black;
     outline: none;
     margin-top: 0.7rem;
     border-radius: 10px;
@@ -72,10 +72,18 @@ textarea{
 }
 
 input:focus {
-    border:1px solid var(--secondary-color);
+    border:1.4px solid var(--secondary-color);
     box-shadow: var(--box-shadow-1);
   }
 textarea:focus {
-    border:1px solid var(--secondary-color);
+    border:1.4px solid var(--secondary-color);
     box-shadow: var(--box-shadow-1);
   }
+  .phone p{
+    padding-left: 15px;
+  }
+#customerInfoMssg{
+    height: 1rem;
+    color: red;
+    padding-left: 5px;
+}

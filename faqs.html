@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SAAR Auto Repair Workshop</title>
     <link rel="stylesheet" href="header-footer.css" />
+    <link rel="stylesheet" href="faqs.css" />
     <link rel="icon" type="image/x-icon" href="/imgs/favIcon.svg" />
     <!-- google fonts poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -13,14 +14,11 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-   
+
     <script
       src="https://kit.fontawesome.com/100f11453f.js"
       crossorigin="anonymous"
     ></script>
-
-    
-    <link rel="stylesheet" href="faqs.css" />
   </head>
   <body style="font-family: Poppins, sans-serif">
     <div class="home">
@@ -66,18 +64,19 @@
             </ul>
           </div>
         </div>
-        <nav>
+        <nav id="navbar">
           <ul class="menu">
+            <span id="menuToggler" class="menuBtnDispNone"
+              ><i class="fa-solid fa-angles-up" id="menuIcon"></i
+            ></span>
             <li class="menuItem"><a href="index.html">Home</a></li>
-            <li class="menuItem activeItem">
-              <a href="services.html">Services</a
+            <li class="menuItem">
+              <a href="allServices.html">Services</a
               ><i class="fa-solid fa-caret-down"></i>
               <ul class="menuSubItem">
-                <li><a href="">All Services</a></li>
+                <li><a href="allServices.html">All Services</a></li>
                 <li><a href="engineService.html">Engine Repair</a></li>
-                <li class="activeSubItem">
-                  <a href="AC repair.html">Auto A/C Repair</a>
-                </li>
+                <li><a href="AC repair.html">Auto A/C Repair</a></li>
                 <li><a href="batteryService.html">Battery Service</a></li>
                 <li><a href="oilChange.html">Oil Change</a></li>
                 <li><a href="brakeRepair.html">Brake Service</a></li>
@@ -87,26 +86,23 @@
             <li class="menuItem">
               <a href="">Vehicles</a><i class="fa-solid fa-caret-down"></i>
               <ul class="menuSubItem">
-                <li><a href="">toyota Service</a></li>
-                <li><a href="">Suzuki Service</a></li>
-                <li><a href="">Honda Service</a></li>
-                <li><a href="">Hyudai Service</a></li>
-                <li><a href="">Bmw Service</a></li>
-                <li><a href="">AudiService</a></li>
-                <li><a href="">Land Cruiser Service</a></li>
-                <li><a href="">Lexus Service</a></li>
-                <li><a href="">Hummer Service</a></li>
+                <li><a href="toyotaService.html">toyota Service</a></li>
+                <li><a href="suzukiService.html">Suzuki Service</a></li>
+                <li><a href="hondaService.html">Honda Service</a></li>
+                <li><a href="hyundaiService.html">Hyudai Service</a></li>
+                <li><a href="bmwService.html">Bmw Service</a></li>
+                <li><a href="AudiService.html">AudiService</a></li>
+                <li><a href="hummerService.html">Hummer Service</a></li>
               </ul>
             </li>
             <li class="menuItem">
               <a href="">About Us</a><i class="fa-solid fa-caret-down"></i>
               <ul class="menuSubItem">
                 <li><a href="ownersInfo.html">Owners Info</a></li>
-                <li><a href="">Cotact Us</a></li>
-                <li><a href=""> Developed By</a></li>
+                <li><a href="contact.html">Cotact Us</a></li>
               </ul>
             </li>
-            <li class="menuItem"><a href="">FAQ's</a></li>
+            <li class="menuItem activeItem"><a href="faqs.html">FAQ's</a></li>
             <li class="appointment menuItem">
               <a href="requestAppointment.html">Request Appointment</a>
             </li>
@@ -114,177 +110,247 @@
         </nav>
       </header>
       <!-- start: your code goes here -->
-    <section class="faqs">
+      <section class="faqs">
         <h1>Frequently Asked questions?</h1>
         <div class="faq">
-            <h3>What services do you offer?</h3>
-            <p> We offer a wide range of auto repair and maintenance services, including engine diagnostics, brake repair, tire replacement, oil changes, and more.
-            </p>
+          <h3>What services do you offer?</h3>
+          <p>
+            We offer a wide range of auto repair and maintenance services,
+            including engine diagnostics, brake repair, tire replacement, oil
+            changes, and more.
+          </p>
         </div>
         <div class="faq">
-            <h3>How much will the repair cost?</h3>
-            <p>
-              Costs vary depending on the type of repair needed. We provide estimates after inspecting the vehicle.
-
-            </p>
+          <h3>How much will the repair cost?</h3>
+          <p>
+            Costs vary depending on the type of repair needed. We provide
+            estimates after inspecting the vehicle.
+          </p>
         </div>
         <div class="faq">
-            <h3>How long will the repair take?</h3>
-            <p>
-              Repair times vary based on the complexity of the issue. We'll give you an estimated timeframe when you bring in your car.
-            </p>
+          <h3>How long will the repair take?</h3>
+          <p>
+            Repair times vary based on the complexity of the issue. We'll give
+            you an estimated timeframe when you bring in your car.
+          </p>
         </div>
         <div class="faq">
-            <h3>Do you offer warranties or guarantees on your repairs?</h3>
-            <p>
-              Yes, we offer warranties on parts and labor for added peace of mind.
-            </p>
+          <h3>Do you offer warranties or guarantees on your repairs?</h3>
+          <p>
+            Yes, we offer warranties on parts and labor for added peace of mind.
+          </p>
         </div>
         <div class="faq">
-            <h3>Do you specialize in certain makes or models of cars?</h3>
-            <p> While we service all makes and models, we specialize in [specific makes or models].
-            </p>
+          <h3>Do you specialize in certain makes or models of cars?</h3>
+          <p>
+            While we service all makes and models, we specialize in [specific
+            makes or models].
+          </p>
         </div>
         <div class="faq">
-            <h3>Can you provide a detailed breakdown of the repair process?</h3>
-            <p> Absolutely, we're happy to explain each step of the repair process to you.
-            </p>
+          <h3>Can you provide a detailed breakdown of the repair process?</h3>
+          <p>
+            Absolutely, we're happy to explain each step of the repair process
+            to you.
+          </p>
         </div>
         <div class="faq">
-            <h3>Do you use genuine manufacturer parts or aftermarket parts?</h3>
-            <p>We use high-quality parts, including genuine manufacturer parts and reputable aftermarket options
-            </p>
+          <h3>Do you use genuine manufacturer parts or aftermarket parts?</h3>
+          <p>
+            We use high-quality parts, including genuine manufacturer parts and
+            reputable aftermarket options
+          </p>
         </div>
         <div class="faq">
-            <h3>Are your technicians certified or trained in specific areas?</h3>
-            <p>Yes, our technicians are highly skilled and certified in various areas of auto repair.
-            </p>
+          <h3>Are your technicians certified or trained in specific areas?</h3>
+          <p>
+            Yes, our technicians are highly skilled and certified in various
+            areas of auto repair.
+          </p>
         </div>
         <div class="faq">
-            <h3>Do you offer maintenance services as well?</h3>
-            <p>Yes, we provide routine maintenance services to keep your car running smoothly.
-            </p>
+          <h3>Do you offer maintenance services as well?</h3>
+          <p>
+            Yes, we provide routine maintenance services to keep your car
+            running smoothly.
+          </p>
         </div>
         <div class="faq">
-            <h3>What payment options do you accept?</h3>
-            <p>We accept cash, credit/debit cards, and sometimes offer financing options.
-            </p>
+          <h3>What payment options do you accept?</h3>
+          <p>
+            We accept cash, credit/debit cards, and sometimes offer financing
+            options.
+          </p>
         </div>
         <div class="faq">
-            <h3>We accept cash, credit/debit cards, and sometimes offer financing options.
-            </h3>
-            <p>Yes, we can arrange towing services if needed and provide roadside assistance in certain situations.
-            </p>
+          <h3>
+            We accept cash, credit/debit cards, and sometimes offer financing
+            options.
+          </h3>
+          <p>
+            Yes, we can arrange towing services if needed and provide roadside
+            assistance in certain situations.
+          </p>
         </div>
         <div class="faq">
-            <h3>Can you provide estimates over the phone or online?</h3>
-            <p> We prefer to inspect the vehicle in person to provide accurate estimates.
-            </p>
+          <h3>Can you provide estimates over the phone or online?</h3>
+          <p>
+            We prefer to inspect the vehicle in person to provide accurate
+            estimates.
+          </p>
         </div>
         <div class="faq">
-            <h3>What sets your auto repair shop apart from others in the area?</h3>
-            <p>Our commitment to quality service, experienced technicians, and customer satisfaction set us apart.
-            </p>
+          <h3>
+            What sets your auto repair shop apart from others in the area?
+          </h3>
+          <p>
+            Our commitment to quality service, experienced technicians, and
+            customer satisfaction set us apart.
+          </p>
         </div>
         <div class="faq">
-            <h3>Do you offer any discounts or promotions?</h3>
-            <p>We occasionally offer discounts or promotions, so be sure to ask about current deals.
-            </p>
+          <h3>Do you offer any discounts or promotions?</h3>
+          <p>
+            We occasionally offer discounts or promotions, so be sure to ask
+            about current deals.
+          </p>
         </div>
         <div class="faq">
-            <h3>How often should I bring my car in for routine maintenance?</h3>
-            <p> We recommend following your vehicle manufacturer's maintenance schedule, typically every 6-12 months.
-            </p>
+          <h3>How often should I bring my car in for routine maintenance?</h3>
+          <p>
+            We recommend following your vehicle manufacturer's maintenance
+            schedule, typically every 6-12 months.
+          </p>
         </div>
         <div class="faq">
-            <h3>What should I do if my car breaks down unexpectedly?</h3>
-            <p>Stay calm, pull over safely if possible, and give us a call for assistance.
-            </p>
+          <h3>What should I do if my car breaks down unexpectedly?</h3>
+          <p>
+            Stay calm, pull over safely if possible, and give us a call for
+            assistance.
+          </p>
         </div>
         <div class="faq">
-            <h3>Can you help with insurance claims for repairs?</h3>
-            <p>- Yes, we can assist with insurance claims and work with your insurance company directly.
-            </p>
+          <h3>Can you help with insurance claims for repairs?</h3>
+          <p>
+            - Yes, we can assist with insurance claims and work with your
+            insurance company directly.
+          </p>
         </div>
         <div class="faq">
-            <h3>Do you offer rental cars or loaner vehicles while mine is being repaired?</h3>
-            <p> We offer rental cars or loaner vehicles for your convenience during repairs, depending on availability.
-            </p>
+          <h3>
+            Do you offer rental cars or loaner vehicles while mine is being
+            repaired?
+          </h3>
+          <p>
+            We offer rental cars or loaner vehicles for your convenience during
+            repairs, depending on availability.
+          </p>
         </div>
         <div class="faq">
-            <h3>How can I prevent this issue from happening again in the future?</h3>
-            <p> We'll provide maintenance tips and recommendations to help prevent future issues.
-            </p>
+          <h3>
+            How can I prevent this issue from happening again in the future?
+          </h3>
+          <p>
+            We'll provide maintenance tips and recommendations to help prevent
+            future issues.
+          </p>
         </div>
         <div class="faq">
-            <h3>What signs should I look out for that indicate my car needs immediate attention?</h3>
-            <p> Signs such as strange noises, warning lights on the dashboard, or unusual smells may indicate a problem that needs immediate attention.
-            </p>
+          <h3>
+            What signs should I look out for that indicate my car needs
+            immediate attention?
+          </h3>
+          <p>
+            Signs such as strange noises, warning lights on the dashboard, or
+            unusual smells may indicate a problem that needs
+            immediate attention.
+          </p>
         </div>
-    </section>
-     
+      </section>
 
       <!-- end -->
       <footer>
-        <div class="footerSection1">
-          <div class="logoText">
-            SAAR<span class="smallText"><br />AUTO REPAIR SERVICE</span>
+        <div class="upperFooter">
+          <div class="footerSection1">
+            <div class="logoText">
+              SAAR<span class="smallText"><br />AUTO REPAIR SERVICE</span>
+            </div>
+            <ul class="socialLinks">
+              <li>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-regular fa-envelope"></i></a>
+              </li>
+            </ul>
           </div>
-          <ul class="socialLinks">
-            <li>
-              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-regular fa-envelope"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div class="footerSection2">
-          <div class="address">
-            <i class="fa-solid fa-location-dot"></i
-            ><span class="footer2Hdng">Address</span><br />
-            <p>Near General Bus Stand Timergara, Dir Lower, KPK, Pakistan.</p>
-          </div>
-          <div class="footerHrs">
-            <div class="">
-              <span
-                ><i class="fa-solid fa-clock"></i
-                ><span class="footer2Hdng">Working Hours</span></span
-              ><br />
-              <p>
-                Sat-Thu | 8:00AM-6:00PM<br />
-                <span>Closed on Friday</span>
-              </p>
+          <div class="footerSection2">
+            <div class="address">
+              <i class="fa-solid fa-location-dot"></i
+              ><span class="footer2Hdng">Address</span><br />
+              <p>Near General Bus Stand Timergara, Dir Lower, KPK, Pakistan.</p>
+            </div>
+            <div class="footerHrs">
+              <div class="">
+                <span
+                  ><i class="fa-solid fa-clock"></i
+                  ><span class="footer2Hdng">Working Hours</span></span
+                ><br />
+                <p>
+                  Sat-Thu | 8:00AM-6:00PM<br />
+                  <span>Closed on Friday</span>
+                </p>
+              </div>
+            </div>
+            <div class="address">
+              <i class="fa-solid fa-phone"></i
+              ><span class="footer2Hdng">Contact Us</span><br />
+              <p><a href="tel:03489220242">0348-9220242</a></p>
             </div>
           </div>
-          <div class="address">
-            <i class="fa-solid fa-phone"></i
-            ><span class="footer2Hdng">Contact Us</span><br />
-            <p><a href="tel:03489220242">0348-9220242</a></p>
+          <div class="footerSection3">
+            <div>Quick Links</div>
+            <ul>
+              <li><a href="allServices.html">Services</a></li>
+              <li><a href="toyotaService.html">Vehicles</a></li>
+              <li><a href="ownersInfo.html">About Us</a></li>
+              <li><a href="faqs.html">FAQ's</a></li>
+            </ul>
+          </div>
+          <div class="footerSection4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.3203295988874!2d71.83820663874663!3d34.82270020071062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dbf3c97a6ea9d9%3A0xc4fc67209af41b01!2sGeneral%20Bus%20Stand%20Timergara!5e0!3m2!1sen!2s!4v1714825296338!5m2!1sen!2s"
+              width="300"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
-        <div class="footerSection3">
-          <div>Quick Links</div>
-          <ul>
-            <li><a href="">Services</a></li>
-            <li><a href="">Vehicles</a></li>
-            <li><a href="">About Us</a></li>
-            <li><a href="">FAQ's</a></li>
-          </ul>
-        </div>
-        <div class="footerSection4">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.3203295988874!2d71.83820663874663!3d34.82270020071062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dbf3c97a6ea9d9%3A0xc4fc67209af41b01!2sGeneral%20Bus%20Stand%20Timergara!5e0!3m2!1sen!2s!4v1714825296338!5m2!1sen!2s"
-            width="300"
-            height="200"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
+        <div class="lowerFooter">
+          <hr />
+          <div class="lowerFooterContent">
+            <div class="developersInfo">
+              <span>Developed by: </span
+              ><a
+                href="imgs/Salman-Ud-Din-Front-End-Developer.pdf"
+                target="_blank"
+                >Salman</a
+              ><a
+                href="imgs/Arsalan-Khan-Front-End-Developer.pdf"
+                target="_blank"
+                >Arsalan</a
+              ><a href="">Naeem</a>
+            </div>
+            <div class="copyRight">
+              &copy; SAAR auto workshop. All rights reserved.
+            </div>
+          </div>
         </div>
       </footer>
     </div>

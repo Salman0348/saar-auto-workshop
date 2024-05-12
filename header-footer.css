@@ -36,7 +36,6 @@ header .topHeader{
     justify-content: space-around;
     align-items: center;
     height: 100%;
- 
 }
 .topHeader .contact a:hover{
     color: var(--secondary-color);
@@ -53,6 +52,10 @@ ul{
     border-radius: 5px;
     z-index: 1;
     
+}
+.day5{
+    color: red;
+    font-weight: bold;
 }
 .workingHrs:hover .workingDays{
     visibility: visible;
@@ -86,7 +89,13 @@ ul{
 .workingHrsHeading:hover .fa-caret-down{
     visibility: hidden;
 }
-
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+}
 nav>ul{
     display: flex;
     justify-content: space-around;
@@ -139,7 +148,6 @@ nav .appointment{
     border-bottom-right-radius: 5px;
     overflow: hidden;
     visibility: hidden;
-    padding-bottom: 0.3rem;
 }
 .menuSubItem a{
     display: block;
@@ -151,6 +159,32 @@ nav .appointment{
 }
 .menuItem:hover .menuSubItem{
     visibility: visible;
+}
+.menu{
+    position: relative;
+}
+
+#menuToggler i{
+    cursor: pointer;
+    font-size: 1.1rem;
+}
+#menuToggler i:hover{
+    color: var(--secondary-color);
+}
+.menuBtnDispNone{
+    display: none;
+}
+.menuDisplay{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    background-color: var(--primary-color);
+    width: 40px;
+    height: 100%;
 }
 
 /* active btns */
