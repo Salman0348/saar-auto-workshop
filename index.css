@@ -49,6 +49,9 @@ body{
     font-size: 1.1rem;
     padding-left: 2rem;
 }
+.welcomeDescription2{
+    display: none;
+}
 @keyframes change {
     0%{
         background-image: url(imgs/bg1.jpg);
@@ -241,7 +244,7 @@ body{
 .divider hr{
     position: absolute;
     bottom: 2rem;
-    width: 350px;
+    width: 40%;
     height: 2px;
     border-radius: 2px;
     background-color: #635d65;
@@ -272,4 +275,363 @@ body{
 }
 .tipsContainer .tipItem:hover{
     background-color: #d9dedd;
+}
+
+/* media queries */
+
+
+@media screen and ((min-width:377px) and (max-width:426px)) {
+
+    .homeWelcome .name {
+        font-size: 3.5rem ;
+    }
+    .homeWelcome .service {
+        font-size: 0.9rem ;
+    }
+    .homeWelcome .container {
+        color: white;
+        position: absolute;
+        width: 100% ;
+        top: 13% ;
+        left: 5% ;
+    }
+    .homeWelcome h1 {
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .homeWelcome p {
+        font-size: 1rem;
+        padding-left: 0rem ;
+    }
+    .welcomeDescription1{
+        display: none;
+    }
+    .welcomeDescription2{
+        display: block;
+        width: 78%;
+        padding: 2rem 0;
+        margin-left: 1rem;
+    }
+    /* special offer */
+    .totallServices {
+        padding: 2rem 1.3rem;
+        padding-bottom: 0rem;
+    }
+    .offerImgs {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+    .offerDetail span {
+        font-size: 1rem;
+        width: 70px;
+        height: 35px;
+    }
+    .offerDetail h1 {
+        font-size: 1.2rem;
+    }
+    .offerDetail p{
+        font-size: 0.9rem;
+    }
+    /* key services */
+    .homeServicesContainer {
+        padding-top: 3rem;
+    }
+    .homeServicesContainer .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .homeServicesContainer .header>h1 {
+        font-size: 1.5rem;
+        /* padding-bottom: 1rem; */
+    }
+    .specialOffers>h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        /* text-transform: uppercase; */
+        /* padding-bottom: 1rem; */
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: space-between;
+    }
+    .serviceItem {
+        height: 200px;
+        width: 380px;
+        position: relative;
+    }
+    .serviceItems{
+        gap: 2rem;
+        align-items: center;
+    }
+    .row2{
+        flex-direction: column-reverse;
+    }
+    .darkBg h1{
+        font-size: 1.3rem;
+    }
+    .smallPicService{
+        
+        text-align: center;
+    }
+    .darkBg:hover img{
+        transform: none;
+    }
+
+    /* car tips */
+    .carTips {
+        margin: 3rem 1rem;
+    }
+    .tipsContainer{
+        flex-direction: column;
+    }
+    .carTips>h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+}
+
+
+@media screen and ((min-width:321px) and (max-width:376px)){
+    /* home welcome */
+    .homeWelcome .name {
+        font-size: 3rem ;
+    }
+    .homeWelcome .service {
+        font-size: 0.7rem ;
+    }
+    .homeWelcome .container {
+        color: white;
+        position: absolute;
+        width: 100% ;
+        top: 13% ;
+        left: 5% ;
+    }
+    .homeWelcome h1 {
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+    .homeWelcome p {
+        font-size: 1rem;
+        padding-left: 0rem ;
+    }
+    .welcomeDescription1{
+        display: none;
+    }
+    .welcomeDescription2{
+        display: block;
+        width: 80%;
+        padding: 2rem 0;
+        margin-left: 1rem;
+    }
+    /* special offer */
+    .totallServices {
+        padding: 2rem 1rem;
+        padding-bottom: 0rem;
+    }
+    .offerImgs {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+    .offerDetail span {
+        font-size: 1rem;
+        width: 70px;
+        height: 35px;
+    }
+    .offerDetail h1 {
+        font-size: 1.2rem;
+    }
+    .offerDetail p{
+        font-size: 0.9rem;
+    }
+    /* key services */
+    .homeServicesContainer {
+        padding-top: 3rem;
+    }
+    .homeServicesContainer .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .homeServicesContainer .header>h1 {
+        font-size: 1.5rem;
+        /* padding-bottom: 1rem; */
+    }
+    .specialOffers>h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        /* text-transform: uppercase; */
+        /* padding-bottom: 1rem; */
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: space-between;
+    }
+    .serviceItem {
+        height: 175px;
+        width: 330px;
+        position: relative;
+    }
+    .serviceItems{
+        gap: 2rem;
+        align-items: center;
+    }
+    .row2{
+        flex-direction: column-reverse;
+    }
+    .darkBg h1{
+        font-size: 1.3rem;
+    }
+    .smallPicService{
+        
+        text-align: center;
+    }
+    .darkBg:hover img{
+        transform: none;
+    }
+
+    /* car tips */
+    .carTips {
+        margin: 3rem 1rem;
+    }
+    .tipsContainer{
+        flex-direction: column;
+    }
+    .carTips>h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width:320px) {
+    /* home welcome */
+    .homeWelcome .name {
+        font-size: 3rem ;
+    }
+    .homeWelcome .service {
+        font-size: 0.7rem ;
+    }
+    .homeWelcome .container {
+        color: white;
+        position: absolute;
+        width: 100% ;
+        top: 13% ;
+        left: 5% ;
+    }
+    .homeWelcome h1 {
+        font-size: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+    }
+    .homeWelcome p {
+        font-size: 1rem;
+        padding-left: 0rem ;
+    }
+    .welcomeDescription1{
+        display: none;
+    }
+    .welcomeDescription2{
+        display: block;
+        width: 80%;
+        padding: 2rem 0;
+        margin-left: 1rem;
+    }
+    /* special offer */
+    .totallServices {
+        padding: 2rem 10px;
+        padding-bottom: 0rem;
+    }
+    .offerImgs {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+    .offerDetail span {
+        font-size: 1rem;
+        width: 70px;
+        height: 35px;
+    }
+    .offerDetail h1 {
+        font-size: 1.2rem;
+    }
+    .offerDetail p{
+        font-size: 0.9rem;
+    }
+    /* key services */
+    .homeServicesContainer {
+        padding-top: 3rem;
+    }
+    .homeServicesContainer .header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 1rem;
+    }
+    .homeServicesContainer .header>h1 {
+        font-size: 1.5rem;
+        /* padding-bottom: 1rem; */
+    }
+    .specialOffers>h1 {
+        font-size: 1.5rem;
+        text-align: center;
+        /* text-transform: uppercase; */
+        /* padding-bottom: 1rem; */
+    }
+    .row {
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        justify-content: space-between;
+    }
+    .serviceItem {
+        height: 168.75px;
+        width: 300px;
+        position: relative;
+    }
+    .serviceItems{
+        gap: 2rem;
+    }
+    .row2{
+        flex-direction: column-reverse;
+    }
+    .darkBg h1{
+        font-size: 1.3rem;
+    }
+    .smallPicService{
+        
+        text-align: center;
+    }
+    .darkBg:hover img{
+        transform: none;
+    }
+
+    /* car tips */
+    .carTips {
+        margin: 3rem 1rem;
+    }
+    .tipsContainer{
+        flex-direction: column;
+    }
+    .carTips>h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
 }

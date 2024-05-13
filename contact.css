@@ -64,6 +64,8 @@ textarea{
     text-transform: uppercase;
     cursor: pointer;
     transition: 0.1s;
+    border: none;
+
    
 }
 #submit-btn:hover{

@@ -22,6 +22,55 @@
   </head>
   <body style="font-family: Poppins, sans-serif">
     <div class="home">
+      <div class="burgorMenu">
+        <div class="burgorIconDiv" id="burgorIconDiv">
+          <i class="fa-solid fa-bars" id="burgorIcon"></i>
+        </div>
+        <div class="burgorMenuItems" id="burgorMenuItems">
+          <nav class="navbar">
+            <ul class="menu">
+              <li class="menuItem activeItem">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="menuItem">
+                <span>Services</span> <i class="fa-solid fa-caret-right"></i>
+                <ul class="menuSubItem">
+                  <li><a href="allServices.html">All Services</a></li>
+                  <li><a href="engineService.html">Engine Repair</a></li>
+                  <li><a href="AC repair.html">Auto A/C Repair</a></li>
+                  <li><a href="batteryService.html">Battery Service</a></li>
+                  <li><a href="oilChange.html">Oil Change</a></li>
+                  <li><a href="brakeRepair.html">Brake Service</a></li>
+                  <li><a href="wheelServices.html">Wheel Alignment</a></li>
+                </ul>
+              </li>
+              <li class="menuItem">
+                <span>Vehicles</span><i class="fa-solid fa-caret-right"></i>
+                <ul class="menuSubItem">
+                  <li><a href="toyotaService.html">toyota Service</a></li>
+                  <li><a href="suzukiService.html">Suzuki Service</a></li>
+                  <li><a href="hondaService.html">Honda Service</a></li>
+                  <li><a href="hyundaiService.html">Hyudai Service</a></li>
+                  <li><a href="bmwService.html">Bmw Service</a></li>
+                  <li><a href="AudiService.html">Audi Service</a></li>
+                  <li><a href="hummerService.html">Hummer Service</a></li>
+                </ul>
+              </li>
+              <li class="menuItem">
+                <span>About Us</span><i class="fa-solid fa-caret-right"></i>
+                <ul class="menuSubItem">
+                  <li><a href="ownersInfo.html">Owners Info</a></li>
+                  <li><a href="contact.html">Cotact Us</a></li>
+                </ul>
+              </li>
+              <li class="menuItem"><a href="faqs.html">FAQ's</a></li>
+              <li class="appointment menuItem">
+                <a href="requestAppointment.html">Request Appointment</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
       <header>
         <div class="topHeader">
           <div class="logo">
@@ -118,12 +167,17 @@
               <span class="service"> Auto Repair Workshop!</span>
             </div>
           </h1>
-          <p>
+          <p class="welcomeDescription1">
             Your ride matters. At SAAR Auto Repair Workshop, we're dedicated to
             keeping you on the road with top-quality service. From routine
             maintenance to precision repairs, our skilled technicians and
             advanced equipment have you covered. Trust SAAR for all your
             automotive needs.
+          </p>
+          <p class="welcomeDescription2">
+            Keep moving with SAAR Auto Repair Workshop. Trust our skilled
+            technicians and advanced equipment for top-quality service, from
+            maintenance to repairs. Your ride matters to us.
           </p>
         </div>
       </section>
@@ -175,29 +229,29 @@
                 <div class="darkBg">
                   <img src="imgs/ac.jpg" alt="ac repair" />
                   <a href="AC repair.html">
-                    <h1>A/C Services</h1>
+                    <h1 class="smallPicService">A/C Services</h1>
                   </a>
                 </div>
                 <div class="darkBg">
                   <img src="imgs/carBattery.jpg" alt="battery repair" />
                   <a href="batteryService.html">
-                    <h1>Battery Services</h1>
+                    <h1 class="smallPicService">Battery Services</h1>
                   </a>
                 </div>
               </div>
             </div>
-            <div class="row">
+            <div class="row row2">
               <div class="serviceItem serviceItems2">
                 <div class="darkBg">
                   <img src="imgs/oilChange.jpg" alt="oil change" />
                   <a href="oilChange.html">
-                    <h1>Oil Change</h1>
+                    <h1 class="smallPicService">Oil Change</h1>
                   </a>
                 </div>
                 <div class="darkBg">
                   <img src="imgs/carBrake.jpg" alt="brake service" />
                   <a href="brakeRepair.html">
-                    <h1>Brake Service</h1>
+                    <h1 class="smallPicService">Brake Service</h1>
                   </a>
                 </div>
               </div>
@@ -314,7 +368,7 @@
                 href="imgs/Arsalan-Khan-Front-End-Developer.pdf"
                 target="_blank"
                 >Arsalan</a
-              ><a href="">Naeem</a>
+              ><a href="imgs/Naeem-ullah.pdf" target="_blank">Naeem</a>
             </div>
             <div class="copyRight">
               &copy; SAAR auto workshop. All rights reserved.

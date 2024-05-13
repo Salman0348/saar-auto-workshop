@@ -23,3 +23,24 @@ menuIcon.addEventListener('click',(event)=>{
     navbar.classList.remove('sticky')
 
 })
+
+// burgor menu
+
+let burgorIconDiv = document.getElementById('burgorIconDiv');
+let burgorIcon = document.getElementById('burgorIcon')
+let burgorMenuItems = document.getElementById('burgorMenuItems')
+
+burgorIcon.addEventListener('click',(event)=>{
+  if(burgorIcon.classList.contains('fa-bars')){
+    burgorIcon.classList.remove('fa-bars');
+    burgorIcon.classList.add('fa-xmark');
+  }else{
+    burgorIcon.classList.remove('fa-xmark');
+    burgorIcon.classList.add('fa-bars');
+
+  }
+  burgorMenuItems.classList.toggle('burgorMenuItems')
+  burgorIconDiv.classList.toggle('burgorDivTranslate')
+  burgorIcon.classList.toggle('burgorTranslate')
+
+})
