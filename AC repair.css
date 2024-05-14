@@ -26,3 +26,41 @@ padding: 20px 20px;
 .Services .sub3{
    font-size: large;
 }
+
+/* media qureries */
+@media screen and (max-width:450px) {
+    
+    .Services {
+        padding: 1rem 1rem;
+        font-size: 1.7rem;
+    }
+    .Services h1{
+        font-size: 1.7rem;
+    }
+    .Services>:first-child{
+        margin-bottom: 1rem;
+    }
+    .Services h2{
+        font-size: 1.4rem;
+    }
+    .sub1{
+        font-size: 1rem;
+        text-align: justify;
+    }
+    .Services .sub3{
+        font-size: 1rem;
+        text-align: justify;
+    }
+    .image img {
+        padding: 0;
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+        transform: none;
+        margin-bottom: 2rem;
+        margin-top: 1rem;
+    }
+    .image img:hover{
+        transform: none;
+    }
+}

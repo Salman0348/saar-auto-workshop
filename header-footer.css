@@ -23,6 +23,7 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 header{
     display: flex;
@@ -130,7 +131,7 @@ nav ul li:hover{
     
 }
 nav .appointment{
-    background-color: var(--appointment-color);
+    background-color: var(--appointment-color) !important;
 }
 .menuItem{
     position: relative;
@@ -414,7 +415,7 @@ footer .lowerFooter{
     padding: 0 9px;
 }
 .burgorMenu nav>ul li:hover{
-    background-color: var(--secondary-color);
+    background-color: #9a415d;
 }
 .burgorMenu nav>ul>li>a {
     width: 100%;
@@ -428,7 +429,7 @@ footer .lowerFooter{
     display: flex;
     flex-direction: column;
     position: absolute;
-    background-color: var(--primary-color);
+    background-color: #9a415d;
     z-index: 10;
     top: -1px;
     left: 140px;
@@ -442,16 +443,22 @@ footer .lowerFooter{
     visibility: hidden;
 }
 
+
 .burgorMenu .menuSubItem li {
     width: 100%;
+    height: 68px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border-bottom: 1.5px solid var(--primary-color);
     /* padding-right: 5px; */
-    background-color: var(--secondary-color);
+    background-color: #9a415d;
 }
 .burgorMenu .menuSubItem li:hover{
     background-color: var(--primary-color);
 }
 /**** media queries ****/
+
 @media screen and (max-width:320px) {
     .burgorIconDiv{
         height: 40px;
@@ -459,16 +466,23 @@ footer .lowerFooter{
     }
 
 }
-@media screen and (max-width: 426px) {
+@media screen and (max-width:376px) {
+    .lowerFooter hr {
+        width: 81%;
+    }
+}
+@media screen and (max-width: 660px) {
+    nav .appointment {
+        font-weight: bold;
+        text-align: center;
+    }
     .burgorMenu{
         display: block;
     }
     header nav>ul{
         display: none;
     }
-    /* .navbar nav>ul{
-        display: block;
-    } */
+    
     header{
         z-index: 1;
         height: 22vh;
@@ -510,4 +524,89 @@ footer .lowerFooter{
         margin-left: 10px;
     }
     
+    footer .upperFooter {
+        flex-direction: column;
+        padding: 0;
+        padding-bottom: 1rem;
+        gap: 1rem;
+    }
+    .footerSection1{
+        padding-left: 1rem;
+    }
+    .footerSection2{
+        text-align: center;
+    }
+    .footerSection3{
+        display: none;
+    }
+    /* .footerSection3 ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } */
+    .lowerFooterContent{
+        flex-direction: column;
+    }
+    .lowerFooter .developersInfo {
+        justify-content: center;
+    }
+    .copyRight{
+        text-align: center;
+    }
+    
+}
+@media screen and ((min-width:601px) and (max-width:768px)) {
+    header .menuItem i {
+        transition: 0.1s;
+        position: absolute;
+        right: 0.5rem;
+    }
+    header nav>ul>li>a {
+        
+        text-align: center;
+    }
+    footer .upperFooter {
+        display: flex;
+        flex-direction: column;
+        padding:0;
+    }
+    .footerSection1 {
+        
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .footerSection1 .logoText {
+        margin: 0;
+        width: 154px;
+    }
+    
+    .footerSection2 {
+        padding: 0;
+        flex-direction: row;
+        gap: 1rem;
+        padding: 2rem 1rem 1rem 1rem;
+    }
+    .footerSection2 div{
+        width: fit-content;
+    }
+    .footerSection2 .address{
+        width: 300px;
+    }
+    
+    .footerSection3 div{
+        display: none;
+    }
+    .footerSection3 ul {
+        padding-left: 8px;
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        justify-content: center;
+    }
+    .footerSection4 iframe {
+        border-radius: 2px;
+        width: 82vw;
+    }
+
 }

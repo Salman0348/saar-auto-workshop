@@ -29,3 +29,53 @@ padding: 20px 20px;
 .oilServices.oilsubDis{
 font-size: large;
 }
+
+/* media quries */
+@media screen and (max-width:768px) {
+    .oilServices h1{
+        font-size: 3rem;
+    }
+    .oilServices h2{
+        font-size: 2rem;
+    }
+}
+
+
+@media screen and (max-width:450px) {
+    
+    .oilServices {
+        padding: 1rem 1rem 2rem 1rem;
+        font-size: 1rem;
+    }
+    .oilServices h1{
+        font-size: 1.8rem;
+    }
+    .oilServices>:first-child{
+        margin-bottom: 1rem;
+    }
+    .oilServices h2{
+        font-size: 1.3rem;
+    }
+    .subOil1 h1{
+        font-size: 1.5rem;
+    }
+    .oilServices p{
+        text-align: justify;
+    }
+    .sub2 h1{
+        font-size: 1.5rem;
+    }
+    .oilDis h1{
+        font-size: 1.5rem;
+    }
+    .image img {
+        padding: 0;
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+        padding: 1rem 0 2rem 0;
+    }
+    .image img:hover{
+        transform: none;
+    }
+}

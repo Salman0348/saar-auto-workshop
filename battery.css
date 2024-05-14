@@ -3,7 +3,7 @@
 }
 .Services{
     padding: 50px 60px;
-    margin: left;
+    
     font-size: xx-large; 
 }
 .subservice{
@@ -29,3 +29,50 @@ padding: 20px 20px;
 .sub4 .sub4b{
     font-size: large
 }
+
+@media screen and (max-width:768px) {
+    .Services h1{
+        font-size: 2rem;
+    }
+    .Services h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    
+    .Services {
+        padding: 1rem 1rem;
+        font-size: 1rem;
+    }
+    .Services h1{
+        font-size: 1.7rem;
+    }
+    .Services h2{
+        font-size: 1.1rem;
+    }
+    .Services>:first-child{
+        margin-bottom: 1rem;
+    }
+    .sub h1{
+        font-size: 1.2rem;
+    }
+    .sub2 h1{
+        font-size: 1.2rem;
+    }
+    .Services p{
+        text-align: justify;
+        font-size: 1rem;
+    }
+    .image img {
+        padding: 0;
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+        padding: 1rem 0 2rem 0;
+    }
+    .image img:hover{
+        transform: none;
+    }
+}
+

@@ -21,339 +21,399 @@
     ></script>
   </head>
   <body style="font-family: Poppins, sans-serif">
-    <header>
-      <div class="topHeader">
-        <div class="logo">
-          <!-- <span>SAAR</span><span>Auto Repair Workshop</span> -->
-          <a href="index.html"
-            ><img src="imgs/logo5.png" alt="logo" width="300px"
-          /></a>
+    <div class="home">
+      <div class="burgorMenu">
+        <div class="burgorIconDiv" id="burgorIconDiv">
+          <i class="fa-solid fa-bars" id="burgorIcon"></i>
         </div>
-        <div class="contact">
-          <i class="fa-solid fa-phone"></i>
-          <a href="tel:03489220242">0348-9220242</a>
-        </div>
-        <div class="workingHrs">
-          <div class="workingHrsHeading">
-            <span>Working Hours</span><br />
-            <span><i class="fa-solid fa-clock"></i> 8:00AM-6:00PM</span>&nbsp;<i
-              class="fa-solid fa-caret-down"
-            ></i>
-          </div>
-          <div class="workingDays">
-            <div class="day1">Mon <br /><span>8:00AM-6:00PM</span></div>
-            <div class="day2">Tue <br /><span>8:00AM-6:00PM</span></div>
-            <div class="day3">Wed <br /><span>8:00AM-6:00PM</span></div>
-            <div class="day4">Thu <br /><span>8:00AM-6:00PM</span></div>
-            <div class="day5">Fri <br /><span>Closed</span></div>
-            <div class="day6">Sat <br /><span>8:00AM-6:00PM</span></div>
-            <div class="day7">Sun <br /><span>8:00AM-6:00PM</span></div>
-          </div>
-        </div>
-        <div>
-          <ul class="socialLinks">
-            <li>
-              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-regular fa-envelope"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <nav id="navbar">
-        <ul class="menu">
-          <span id="menuToggler" class="menuBtnDispNone"
-            ><i class="fa-solid fa-angles-up" id="menuIcon"></i
-          ></span>
-          <li class="menuItem"><a href="index.html">Home</a></li>
-          <li class="menuItem">
-            <a href="allServices.html">Services</a
-            ><i class="fa-solid fa-caret-down"></i>
-            <ul class="menuSubItem">
-              <li><a href="allServices.html">All Services</a></li>
-              <li><a href="engineService.html">Engine Repair</a></li>
-              <li><a href="AC repair.html">Auto A/C Repair</a></li>
-              <li><a href="batteryService.html">Battery Service</a></li>
-              <li><a href="oilChange.html">Oil Change</a></li>
-              <li><a href="brakeRepair.html">Brake Service</a></li>
-              <li><a href="wheelServices.html">Wheel Alignment</a></li>
-            </ul>
-          </li>
-          <li class="menuItem activeItem">
-            <a href="">Vehicles</a><i class="fa-solid fa-caret-down"></i>
-            <ul class="menuSubItem">
-              <li><a href="toyotaService.html">toyota Service</a></li>
-              <li><a href="suzukiService.html">Suzuki Service</a></li>
-              <li><a href="hondaService.html">Honda Service</a></li>
-              <li><a href="hyundaiService.html">Hyudai Service</a></li>
-              <li class="activeItem">
-                <a href="bmwService.html">Bmw Service</a>
+        <div class="burgorMenuItems" id="burgorMenuItems">
+          <nav class="navbar">
+            <ul class="menu">
+              <li class="menuItem">
+                <a href="index.html">Home</a>
               </li>
-              <li><a href="AudiService.html">AudiService</a></li>
-              <li><a href="hummerService.html">Hummer Service</a></li>
-            </ul>
-          </li>
-          <li class="menuItem">
-            <a href="">About Us</a><i class="fa-solid fa-caret-down"></i>
-            <ul class="menuSubItem">
-              <li><a href="ownersInfo.html">Owners Info</a></li>
-              <li><a href="contact.html">Cotact Us</a></li>
-            </ul>
-          </li>
-          <li class="menuItem"><a href="faqs.html">FAQ's</a></li>
-          <li class="appointment menuItem">
-            <a href="requestAppointment.html">Request Appointment</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <!-- start -->
-    <section class="companyWiseServiceSect">
-      <h1>Bmw Services</h1>
-      <div class="companyWiseServiceCon">
-        <div class="serviceImg">
-          <div class="apptmnt">
-            <a href="requestAppointment.html"
-              ><i class="fa-solid fa-calendar-check"></i> Schedule Appointment
-            </a>
-          </div>
-          <img src="imgs/bmw.jpg" alt="toyota-img" />
-          <img src="imgs/bmw2.jpg" alt="lc300" />
-        </div>
-        <div class="serviceDetail">
-          <!-- 1. BMW Ultimate Care -->
-          <div class="serviceDetailItem">
-            <h3>BMW Ultimate Care</h3>
-            <ul>
-              <li>
-                Comprehensive maintenance plan tailored to BMW's specifications.
+              <li class="menuItem">
+                <span>Services</span> <i class="fa-solid fa-caret-right"></i>
+                <ul class="menuSubItem">
+                  <li><a href="allServices.html">All Services</a></li>
+                  <li><a href="engineService.html">Engine Repair</a></li>
+                  <li><a href="AC repair.html">Auto A/C Repair</a></li>
+                  <li><a href="batteryService.html">Battery Service</a></li>
+                  <li><a href="oilChange.html">Oil Change</a></li>
+                  <li><a href="brakeRepair.html">Brake Service</a></li>
+                  <li><a href="wheelServices.html">Wheel Alignment</a></li>
+                </ul>
               </li>
-              <li>
-                Includes essential services such as oil changes, filter
-                replacements, fluid checks, and tire rotations to keep your BMW
-                running smoothly.
+              <li class="menuItem activeItem">
+                <span>Vehicles</span><i class="fa-solid fa-caret-right"></i>
+                <ul class="menuSubItem">
+                  <li>
+                    <a href="toyotaService.html">toyota Service</a>
+                  </li>
+                  <li><a href="suzukiService.html">Suzuki Service</a></li>
+                  <li class="activeItem">
+                    <a href="hondaService.html">Honda Service</a>
+                  </li>
+                  <li><a href="hyundaiService.html">Hyudai Service</a></li>
+                  <li><a href="bmwService.html">Bmw Service</a></li>
+                  <li><a href="AudiService.html">Audi Service</a></li>
+                  <li><a href="hummerService.html">Hummer Service</a></li>
+                </ul>
+              </li>
+              <li class="menuItem">
+                <span>About Us</span><i class="fa-solid fa-caret-right"></i>
+                <ul class="menuSubItem">
+                  <li><a href="ownersInfo.html">Owners Info</a></li>
+                  <li><a href="contact.html">Cotact Us</a></li>
+                </ul>
+              </li>
+              <li class="menuItem"><a href="faqs.html">FAQ's</a></li>
+              <li class="appointment menuItem">
+                <a href="requestAppointment.html">Request Appointment</a>
               </li>
             </ul>
-          </div>
-
-          <!-- 2. BMW Performance Upgrades -->
-          <div class="serviceDetailItem">
-            <h3>BMW Performance Upgrades</h3>
-            <ul>
-              <li>
-                Installation of genuine BMW performance parts and upgrades.
-              </li>
-              <li>
-                Enhances power, handling, and overall driving dynamics of your
-                BMW.
-              </li>
-            </ul>
-          </div>
-
-          <!-- 3. BMW Diagnostics and Repair -->
-          <div class="serviceDetailItem">
-            <h3>BMW Diagnostics and Repair</h3>
-            <ul>
-              <li>
-                Advanced diagnostic tools and expertise to identify and address
-                issues specific to BMW vehicles.
-              </li>
-              <li>
-                Diagnosis and repair of engine, electrical, and mechanical
-                systems to ensure optimal performance.
-              </li>
-            </ul>
-          </div>
-
-          <!-- 4. BMW Interior Detailing -->
-          <div class="serviceDetailItem">
-            <h3>BMW Interior Detailing</h3>
-            <ul>
-              <li>
-                Professional cleaning and restoration of the interior of your
-                BMW.
-              </li>
-              <li>
-                Includes upholstery cleaning, dashboard restoration, and leather
-                conditioning for a pristine interior.
-              </li>
-            </ul>
-          </div>
-
-          <!-- 5. BMW Performance Suspension Tuning -->
-          <div class="serviceDetailItem">
-            <h3>BMW Performance Suspension Tuning</h3>
-            <ul>
-              <li>
-                Customized suspension tuning to optimize handling and comfort
-                for your BMW.
-              </li>
-              <li>
-                Adjustment of suspension components for improved stability and
-                agility.
-              </li>
-            </ul>
-          </div>
-
-          <!-- 6. BMW Brake System Services -->
-          <div class="serviceDetailItem">
-            <h3>BMW Brake System Services</h3>
-            <ul>
-              <li>
-                Inspection, repair, and replacement of brake pads, brake discs,
-                and brake fluid.
-              </li>
-              <li>
-                Ensures precise braking performance and safety for your BMW.
-              </li>
-            </ul>
-          </div>
-
-          <!-- 7. BMW Engine Performance Tuning -->
-          <div class="serviceDetailItem">
-            <h3>BMW Engine Performance Tuning</h3>
-            <ul>
-              <li>
-                Custom engine tuning to maximize power and efficiency for your
-                BMW.
-              </li>
-              <li>
-                Optimization of engine parameters for enhanced performance and
-                responsiveness.
-              </li>
-            </ul>
-          </div>
-
-          <!-- 8. BMW Exhaust System Upgrades -->
-          <div class="serviceDetailItem">
-            <h3>BMW Exhaust System Upgrades</h3>
-            <ul>
-              <li>
-                Installation of high-performance exhaust systems for improved
-                sound and horsepower.
-              </li>
-              <li>Enhances the sporty character and aesthetics of your BMW.</li>
-            </ul>
-          </div>
-
-          <!-- 9. BMW Wheel and Tire Services -->
-          <div class="serviceDetailItem">
-            <h3>BMW Wheel and Tire Services</h3>
-            <ul>
-              <li>
-                Wheel alignment, tire rotation, and tire balancing services
-                tailored to BMW specifications.
-              </li>
-              <li>
-                Ensures optimal tire wear and handling performance for your BMW.
-              </li>
-            </ul>
-          </div>
-
-          <!-- 10. BMW Advanced Driver Assistance Calibration -->
-          <div class="serviceDetailItem">
-            <h3>BMW Advanced Driver Assistance Calibration</h3>
-            <ul>
-              <li>
-                Calibration and adjustment of advanced driver assistance systems
-                (ADAS) for precise operation.
-              </li>
-              <li>
-                Ensures the safety and functionality of ADAS features in your
-                BMW.
-              </li>
-            </ul>
-          </div>
+          </nav>
         </div>
       </div>
-    </section>
-    <!-- end -->
-    <footer>
-      <div class="upperFooter">
-        <div class="footerSection1">
-          <div class="logoText">
-            SAAR<span class="smallText"><br />AUTO REPAIR SERVICE</span>
+      <header>
+        <div class="topHeader">
+          <div class="logo">
+            <!-- <span>SAAR</span><span>Auto Repair Workshop</span> -->
+            <a href="index.html"
+              ><img src="imgs/logo5.png" alt="logo" width="300px"
+            /></a>
           </div>
-          <ul class="socialLinks">
-            <li>
-              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-regular fa-envelope"></i></a>
-            </li>
-          </ul>
-        </div>
-        <div class="footerSection2">
-          <div class="address">
-            <i class="fa-solid fa-location-dot"></i
-            ><span class="footer2Hdng">Address</span><br />
-            <p>Near General Bus Stand Timergara, Dir Lower, KPK, Pakistan.</p>
+          <div class="contact">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:03489220242">0348-9220242</a>
           </div>
-          <div class="footerHrs">
-            <div class="">
-              <span
-                ><i class="fa-solid fa-clock"></i
-                ><span class="footer2Hdng">Working Hours</span></span
-              ><br />
-              <p>
-                Sat-Thu | 8:00AM-6:00PM<br />
-                <span>Closed on Friday</span>
-              </p>
+          <div class="workingHrs">
+            <div class="workingHrsHeading">
+              <span>Working Hours</span><br />
+              <span><i class="fa-solid fa-clock"></i> 8:00AM-6:00PM</span
+              >&nbsp;<i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="workingDays">
+              <div class="day1">Mon <br /><span>8:00AM-6:00PM</span></div>
+              <div class="day2">Tue <br /><span>8:00AM-6:00PM</span></div>
+              <div class="day3">Wed <br /><span>8:00AM-6:00PM</span></div>
+              <div class="day4">Thu <br /><span>8:00AM-6:00PM</span></div>
+              <div class="day5">Fri <br /><span>Closed</span></div>
+              <div class="day6">Sat <br /><span>8:00AM-6:00PM</span></div>
+              <div class="day7">Sun <br /><span>8:00AM-6:00PM</span></div>
             </div>
           </div>
-          <div class="address">
-            <i class="fa-solid fa-phone"></i
-            ><span class="footer2Hdng">Contact Us</span><br />
-            <p><a href="tel:03489220242">0348-9220242</a></p>
+          <div>
+            <ul class="socialLinks">
+              <li>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-regular fa-envelope"></i></a>
+              </li>
+            </ul>
           </div>
         </div>
-        <div class="footerSection3">
-          <div>Quick Links</div>
-          <ul>
-            <li><a href="allServices.html">Services</a></li>
-            <li><a href="toyotaService.html">Vehicles</a></li>
-            <li><a href="ownersInfo.html">About Us</a></li>
-            <li><a href="faqs.html">FAQ's</a></li>
+        <nav id="navbar">
+          <ul class="menu">
+            <span id="menuToggler" class="menuBtnDispNone"
+              ><i class="fa-solid fa-angles-up" id="menuIcon"></i
+            ></span>
+            <li class="menuItem"><a href="index.html">Home</a></li>
+            <li class="menuItem">
+              <a href="allServices.html">Services</a
+              ><i class="fa-solid fa-caret-down"></i>
+              <ul class="menuSubItem">
+                <li><a href="allServices.html">All Services</a></li>
+                <li><a href="engineService.html">Engine Repair</a></li>
+                <li><a href="AC repair.html">Auto A/C Repair</a></li>
+                <li><a href="batteryService.html">Battery Service</a></li>
+                <li><a href="oilChange.html">Oil Change</a></li>
+                <li><a href="brakeRepair.html">Brake Service</a></li>
+                <li><a href="wheelServices.html">Wheel Alignment</a></li>
+              </ul>
+            </li>
+            <li class="menuItem activeItem">
+              <a href="">Vehicles</a><i class="fa-solid fa-caret-down"></i>
+              <ul class="menuSubItem">
+                <li><a href="toyotaService.html">toyota Service</a></li>
+                <li><a href="suzukiService.html">Suzuki Service</a></li>
+                <li><a href="hondaService.html">Honda Service</a></li>
+                <li><a href="hyundaiService.html">Hyudai Service</a></li>
+                <li class="activeItem">
+                  <a href="bmwService.html">Bmw Service</a>
+                </li>
+                <li><a href="AudiService.html">AudiService</a></li>
+                <li><a href="hummerService.html">Hummer Service</a></li>
+              </ul>
+            </li>
+            <li class="menuItem">
+              <a href="">About Us</a><i class="fa-solid fa-caret-down"></i>
+              <ul class="menuSubItem">
+                <li><a href="ownersInfo.html">Owners Info</a></li>
+                <li><a href="contact.html">Cotact Us</a></li>
+              </ul>
+            </li>
+            <li class="menuItem"><a href="faqs.html">FAQ's</a></li>
+            <li class="appointment menuItem">
+              <a href="requestAppointment.html">Request Appointment</a>
+            </li>
           </ul>
-        </div>
-        <div class="footerSection4">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.3203295988874!2d71.83820663874663!3d34.82270020071062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dbf3c97a6ea9d9%3A0xc4fc67209af41b01!2sGeneral%20Bus%20Stand%20Timergara!5e0!3m2!1sen!2s!4v1714825296338!5m2!1sen!2s"
-            width="300"
-            height="200"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-      <div class="lowerFooter">
-        <hr />
-        <div class="lowerFooterContent">
-          <div class="developersInfo">
-            <span>Developed by: </span
-            ><a
-              href="imgs/Salman-Ud-Din-Front-End-Developer.pdf"
-              target="_blank"
-              >Salman</a
-            ><a href="imgs/Arsalan-Khan-Front-End-Developer.pdf" target="_blank"
-              >Arsalan</a
-            ><a href="imgs/Naeem-ullah.pdf" target="_blank">Naeem</a>
+        </nav>
+      </header>
+      <!-- start -->
+      <section class="companyWiseServiceSect">
+        <h1>Bmw Services</h1>
+        <div class="companyWiseServiceCon">
+          <div class="serviceImg">
+            <div class="apptmnt">
+              <a href="requestAppointment.html"
+                ><i class="fa-solid fa-calendar-check"></i> Schedule Appointment
+              </a>
+            </div>
+            <img src="imgs/bmw.jpg" alt="toyota-img" />
+            <img src="imgs/bmw2.jpg" alt="lc300" />
           </div>
-          <div class="copyRight">
-            &copy; SAAR auto workshop. All rights reserved.
+          <div class="serviceDetail">
+            <!-- 1. BMW Ultimate Care -->
+            <div class="serviceDetailItem">
+              <h3>BMW Ultimate Care</h3>
+              <ul>
+                <li>
+                  Comprehensive maintenance plan tailored to BMW's
+                  specifications.
+                </li>
+                <li>
+                  Includes essential services such as oil changes, filter
+                  replacements, fluid checks, and tire rotations to keep your
+                  BMW running smoothly.
+                </li>
+              </ul>
+            </div>
+
+            <!-- 2. BMW Performance Upgrades -->
+            <div class="serviceDetailItem">
+              <h3>BMW Performance Upgrades</h3>
+              <ul>
+                <li>
+                  Installation of genuine BMW performance parts and upgrades.
+                </li>
+                <li>
+                  Enhances power, handling, and overall driving dynamics of your
+                  BMW.
+                </li>
+              </ul>
+            </div>
+
+            <!-- 3. BMW Diagnostics and Repair -->
+            <div class="serviceDetailItem">
+              <h3>BMW Diagnostics and Repair</h3>
+              <ul>
+                <li>
+                  Advanced diagnostic tools and expertise to identify and
+                  address issues specific to BMW vehicles.
+                </li>
+                <li>
+                  Diagnosis and repair of engine, electrical, and mechanical
+                  systems to ensure optimal performance.
+                </li>
+              </ul>
+            </div>
+
+            <!-- 4. BMW Interior Detailing -->
+            <div class="serviceDetailItem">
+              <h3>BMW Interior Detailing</h3>
+              <ul>
+                <li>
+                  Professional cleaning and restoration of the interior of your
+                  BMW.
+                </li>
+                <li>
+                  Includes upholstery cleaning, dashboard restoration, and
+                  leather conditioning for a pristine interior.
+                </li>
+              </ul>
+            </div>
+
+            <!-- 5. BMW Performance Suspension Tuning -->
+            <div class="serviceDetailItem">
+              <h3>BMW Performance Suspension Tuning</h3>
+              <ul>
+                <li>
+                  Customized suspension tuning to optimize handling and comfort
+                  for your BMW.
+                </li>
+                <li>
+                  Adjustment of suspension components for improved stability and
+                  agility.
+                </li>
+              </ul>
+            </div>
+
+            <!-- 6. BMW Brake System Services -->
+            <div class="serviceDetailItem">
+              <h3>BMW Brake System Services</h3>
+              <ul>
+                <li>
+                  Inspection, repair, and replacement of brake pads, brake
+                  discs, and brake fluid.
+                </li>
+                <li>
+                  Ensures precise braking performance and safety for your BMW.
+                </li>
+              </ul>
+            </div>
+
+            <!-- 7. BMW Engine Performance Tuning -->
+            <div class="serviceDetailItem">
+              <h3>BMW Engine Performance Tuning</h3>
+              <ul>
+                <li>
+                  Custom engine tuning to maximize power and efficiency for your
+                  BMW.
+                </li>
+                <li>
+                  Optimization of engine parameters for enhanced performance and
+                  responsiveness.
+                </li>
+              </ul>
+            </div>
+
+            <!-- 8. BMW Exhaust System Upgrades -->
+            <div class="serviceDetailItem">
+              <h3>BMW Exhaust System Upgrades</h3>
+              <ul>
+                <li>
+                  Installation of high-performance exhaust systems for improved
+                  sound and horsepower.
+                </li>
+                <li>
+                  Enhances the sporty character and aesthetics of your BMW.
+                </li>
+              </ul>
+            </div>
+
+            <!-- 9. BMW Wheel and Tire Services -->
+            <div class="serviceDetailItem">
+              <h3>BMW Wheel and Tire Services</h3>
+              <ul>
+                <li>
+                  Wheel alignment, tire rotation, and tire balancing services
+                  tailored to BMW specifications.
+                </li>
+                <li>
+                  Ensures optimal tire wear and handling performance for your
+                  BMW.
+                </li>
+              </ul>
+            </div>
+
+            <!-- 10. BMW Advanced Driver Assistance Calibration -->
+            <div class="serviceDetailItem">
+              <h3>BMW Advanced Driver Assistance Calibration</h3>
+              <ul>
+                <li>
+                  Calibration and adjustment of advanced driver assistance
+                  systems (ADAS) for precise operation.
+                </li>
+                <li>
+                  Ensures the safety and functionality of ADAS features in your
+                  BMW.
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </section>
+      <!-- end -->
+      <footer>
+        <div class="upperFooter">
+          <div class="footerSection1">
+            <div class="logoText">
+              SAAR<span class="smallText"><br />AUTO REPAIR SERVICE</span>
+            </div>
+            <ul class="socialLinks">
+              <li>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-regular fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footerSection2">
+            <div class="address">
+              <i class="fa-solid fa-location-dot"></i
+              ><span class="footer2Hdng">Address</span><br />
+              <p>Near General Bus Stand Timergara, Dir Lower, KPK, Pakistan.</p>
+            </div>
+            <div class="footerHrs">
+              <div class="">
+                <span
+                  ><i class="fa-solid fa-clock"></i
+                  ><span class="footer2Hdng">Working Hours</span></span
+                ><br />
+                <p>
+                  Sat-Thu | 8:00AM-6:00PM<br />
+                  <span>Closed on Friday</span>
+                </p>
+              </div>
+            </div>
+            <div class="address">
+              <i class="fa-solid fa-phone"></i
+              ><span class="footer2Hdng">Contact Us</span><br />
+              <p><a href="tel:03489220242">0348-9220242</a></p>
+            </div>
+          </div>
+          <div class="footerSection3">
+            <div>Quick Links</div>
+            <ul>
+              <li><a href="allServices.html">Services</a></li>
+              <li><a href="toyotaService.html">Vehicles</a></li>
+              <li><a href="ownersInfo.html">About Us</a></li>
+              <li><a href="faqs.html">FAQ's</a></li>
+            </ul>
+          </div>
+          <div class="footerSection4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.3203295988874!2d71.83820663874663!3d34.82270020071062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dbf3c97a6ea9d9%3A0xc4fc67209af41b01!2sGeneral%20Bus%20Stand%20Timergara!5e0!3m2!1sen!2s!4v1714825296338!5m2!1sen!2s"
+              width="300"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+        <div class="lowerFooter">
+          <hr />
+          <div class="lowerFooterContent">
+            <div class="developersInfo">
+              <span>Developed by: </span
+              ><a
+                href="imgs/Salman-Ud-Din-Front-End-Developer.pdf"
+                target="_blank"
+                >Salman</a
+              ><a
+                href="imgs/Arsalan-Khan-Front-End-Developer.pdf"
+                target="_blank"
+                >Arsalan</a
+              ><a href="imgs/Naeem-ullah.pdf" target="_blank">Naeem</a>
+            </div>
+            <div class="copyRight">
+              &copy; SAAR auto workshop. All rights reserved.
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
 
     <script src="script.js"></script>
   </body>

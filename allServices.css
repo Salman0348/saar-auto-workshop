@@ -1,6 +1,9 @@
 body{
     background-color: #eef8f5;
 }
+.servicesH2{
+    display: none;
+}
 .allServicesSect ul{
     list-style-type: disc;
     padding-left: 15px;
@@ -14,6 +17,8 @@ body{
 }
 .allServicesCon{
     display: flex;
+    padding-top: 1rem;
+    gap: 2rem;
 }
 .leftServicesCon{
     width: 75vw;
@@ -21,14 +26,18 @@ body{
     grid-template-columns: repeat(2,1fr);
     gap: 3rem;
 }
-/* .rightServicesCon{
-    min-width: 400px;
-} */
+.serviceItem{
+    
+        border: 1px solid var(--secondary-color);
+        box-shadow: var(--box-shadow-1);
+        padding: 2rem 2rem;
+        border-radius: 15px;
+    
+}
+
 .rightServicesCon li{
     padding-bottom: 0.4rem;
-    /* color: var(--secondary-color); */
     list-style-type: none;
-    /* font-size: 1rem; */
 }
 .rightServicesCon a:hover{
     color: var(--secondary-color);
@@ -36,3 +45,57 @@ body{
 .rightServicesCon h1{
     color: var(--secondary-color);
 }
+
+@media screen and (max-width:768px) {
+    .allServicesSect>h1 {
+        font-size: 1.6rem;
+    }
+    .rightServicesCon h1 {
+        font-size: 1.3rem;
+    }
+    .serviceItem h2{
+        font-size: 1.4rem;
+    }
+}
+@media screen and (max-width:450px) {
+    .allServicesSect>h1 {
+        font-size: 1.5rem;
+        padding-bottom: 0;
+    }
+    .allServicesSect {
+        padding: 2rem 1rem 3rem 1rem;
+    }
+    
+    .allServicesCon {
+        flex-direction: column-reverse;
+        gap: 1rem;
+    }
+    .rightServicesCon h1 {
+        font-size: 1.2rem;
+    }
+    .servicesH1{
+        display: none;
+    }
+    .servicesH2{
+        display: block;
+    }
+    .leftServicesCon {
+        width: 90vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+    .serviceItem{
+            padding: 1rem 1.5rem;
+            border: 1px solid var(--secondary-color);
+            box-shadow: var(--box-shadow-1);
+            border-radius: 15px;
+        }
+    .serviceItem h2{
+        font-size: 1.3rem;
+    }
+    .serviceItem ul{
+        text-align: justify;
+    }
+}
+

@@ -96,3 +96,71 @@ textarea:focus {
   .phone p{
     padding-left: 10px;
   }
+
+  /* media queries */
+  @media screen and (max-width:450px) {
+    
+    .formContainer {
+        padding: 1rem 1rem 3rem 1rem;
+    }
+    div.formContainer>h1 {
+        font-size: 2rem;
+        text-transform: uppercase;
+        padding-top: 1rem;
+        text-align: center;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    form>div {
+        width: auto;
+    }
+    .dateOfWork input {
+        margin-right: 0;
+        margin-top: 0;
+    }
+    #customerInfoMssg {
+        height: auto;
+        
+    }
+    #vehicleYearMssg{
+        height: auto;
+    }
+
+    input[type="date"]:before {
+        color: black;
+        content: attr(placeholder) !important;
+        margin-right: 0.5em;
+      }
+      input[type="date"]:focus:before {
+        content: '' !important;
+      }
+    input[type="time"]:before {
+        color: black;
+        content: attr(placeholder) !important;
+        margin-right: 0.5em;
+      }
+      input[type="time"]:focus:before {
+        content: '' !important;
+      }
+      
+  }
+  @media screen and (max-width:768px) {
+    .formContainer {
+        padding: 2rem 2rem 5rem 2rem;
+        /* width: 100%; */
+    }
+    form {
+        gap: 2rem;
+    }
+    #vehicleYearMssg {
+        height: auto;
+        
+    }
+    #customerInfoMssg {
+        height: auto;
+        
+    }
+  }

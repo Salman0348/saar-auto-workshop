@@ -29,3 +29,50 @@ padding: 20px 20px;
 .Brakesub1 .brakesub4b{
     font-size: large
 }
+
+/* media queries */
+@media screen and (max-width:768px) {
+    .BrakeServices h1{
+        font-size: 2rem;
+    }
+    .BrakeServices h2{
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width:450px) {
+    
+    .BrakeServices {
+        padding: 1rem 1rem 2rem 1rem;
+        font-size: 1rem;
+    }
+    .BrakeServices h1{
+        font-size: 1.8rem;
+    }
+    .BrakeServices>:first-child{
+        margin-bottom: 1rem;
+    }
+    .BrakeServices h2{
+        font-size: 1.1rem;
+    }
+    .sub h1{
+        font-size: 1.2rem;
+    }
+    .sub2 h1{
+        font-size: 1.2rem;
+    }
+    .BrakeServices p{
+        text-align: justify;
+        font-size: 1rem;
+    }
+    .image img {
+        padding: 0;
+        border-radius: 0;
+        width: 100%;
+        height: auto;
+        padding: 1rem 0 2rem 0;
+    }
+    .image img:hover{
+        transform: none;
+    }
+}
