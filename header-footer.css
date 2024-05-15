@@ -52,7 +52,7 @@ ul{
     visibility: hidden;
     position: absolute;
     border-radius: 5px;
-    z-index: 1;
+    z-index: 10;
     
 }
 .day5{
@@ -105,6 +105,7 @@ nav>ul{
     height: 3rem;
     color: var(--white-color);
     background-color: var(--primary-color);
+    z-index: 2;
 }
 
 nav>ul>li{
