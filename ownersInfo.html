@@ -21,251 +21,308 @@
     ></script>
   </head>
   <body style="font-family: Poppins, sans-serif">
-    <header>
-      <div class="topHeader">
-        <div class="logo">
-          <a href="index.html"
-            ><img src="imgs/logo5.png" alt="logo" width="300px"
-          /></a>
+    <div class="home">
+      <div class="burgorMenu">
+        <div class="burgorIconDiv" id="burgorIconDiv">
+          <i class="fa-solid fa-bars" id="burgorIcon"></i>
         </div>
-        <div class="contact">
-          <i class="fa-solid fa-phone"></i>
-          <a href="tel:03489220242">0348-9220242</a>
-        </div>
-        <div class="workingHrs">
-          <div class="workingHrsHeading">
-            <span>Working Hours</span><br />
-            <span><i class="fa-solid fa-clock"></i> 8:00AM-6:00PM</span>&nbsp;<i
-              class="fa-solid fa-caret-down"
-            ></i>
-          </div>
-          <div class="workingDays">
-            <div class="day1">Mon <br /><span>8:00AM-6:00PM</span></div>
-            <div class="day2">Tue <br /><span>8:00AM-6:00PM</span></div>
-            <div class="day3">Wed <br /><span>8:00AM-6:00PM</span></div>
-            <div class="day4">Thu <br /><span>8:00AM-6:00PM</span></div>
-            <div class="day5">Fri <br /><span>Closed</span></div>
-            <div class="day6">Sat <br /><span>8:00AM-6:00PM</span></div>
-            <div class="day7">Sun <br /><span>8:00AM-6:00PM</span></div>
-          </div>
-        </div>
-        <div>
-          <ul class="socialLinks">
-            <li>
-              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
-            </li>
-            <li>
-              <a href=""><i class="fa-regular fa-envelope"></i></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <nav id="navbar">
-        <ul class="menu">
-          <span id="menuToggler" class="menuBtnDispNone"
-            ><i class="fa-solid fa-angles-up" id="menuIcon"></i
-          ></span>
-          <li class="menuItem"><a href="index.html">Home</a></li>
-          <li class="menuItem">
-            <a href="allServices.html">Services</a
-            ><i class="fa-solid fa-caret-down"></i>
-            <ul class="menuSubItem">
-              <li><a href="allServices.html">All Services</a></li>
-              <li><a href="engineService.html">Engine Repair</a></li>
-              <li><a href="AC repair.html">Auto A/C Repair</a></li>
-              <li><a href="batteryService.html">Battery Service</a></li>
-              <li><a href="oilChange.html">Oil Change</a></li>
-              <li><a href="brakeRepair.html">Brake Service</a></li>
-              <li><a href="wheelServices.html">Wheel Alignment</a></li>
-            </ul>
-          </li>
-          <li class="menuItem">
-            <a href="">Vehicles</a><i class="fa-solid fa-caret-down"></i>
-            <ul class="menuSubItem">
-              <li><a href="toyotaService.html">toyota Service</a></li>
-              <li><a href="suzukiService.html">Suzuki Service</a></li>
-              <li><a href="hondaService.html">Honda Service</a></li>
-              <li><a href="hyundaiService.html">Hyudai Service</a></li>
-              <li><a href="bmwService.html">Bmw Service</a></li>
-              <li><a href="AudiService.html">AudiService</a></li>
-              <li><a href="hummerService.html">Hummer Service</a></li>
-            </ul>
-          </li>
-          <li class="menuItem activeItem">
-            <a href="">About Us</a><i class="fa-solid fa-caret-down"></i>
-            <ul class="menuSubItem">
-              <li class="activeSubItem">
-                <a href="ownersInfo.html">Owners Info</a>
+        <div class="burgorMenuItems" id="burgorMenuItems">
+          <nav class="navbar">
+            <ul class="menu">
+              <li class="menuItem">
+                <a href="index.html">Home</a>
               </li>
-              <li><a href="contact.html">Cotact Us</a></li>
+              <li class="menuItem">
+                <span>Services</span> <i class="fa-solid fa-caret-right"></i>
+                <ul class="menuSubItem">
+                  <li><a href="allServices.html">All Services</a></li>
+                  <li><a href="engineService.html">Engine Repair</a></li>
+                  <li><a href="AC repair.html">Auto A/C Repair</a></li>
+                  <li><a href="batteryService.html">Battery Service</a></li>
+                  <li><a href="oilChange.html">Oil Change</a></li>
+                  <li><a href="brakeRepair.html">Brake Service</a></li>
+                  <li><a href="wheelServices.html">Wheel Alignment</a></li>
+                </ul>
+              </li>
+              <li class="menuItem">
+                <span>Vehicles</span><i class="fa-solid fa-caret-right"></i>
+                <ul class="menuSubItem">
+                  <li><a href="toyotaService.html">toyota Service</a></li>
+                  <li><a href="suzukiService.html">Suzuki Service</a></li>
+                  <li><a href="hondaService.html">Honda Service</a></li>
+                  <li><a href="hyundaiService.html">Hyudai Service</a></li>
+                  <li><a href="bmwService.html">Bmw Service</a></li>
+                  <li><a href="AudiService.html">Audi Service</a></li>
+                  <li><a href="hummerService.html">Hummer Service</a></li>
+                </ul>
+              </li>
+              <li class="menuItem activeItem">
+                <span>About Us</span><i class="fa-solid fa-caret-right"></i>
+                <ul class="menuSubItem">
+                  <li class="activeItem">
+                    <a href="ownersInfo.html">Owners Info</a>
+                  </li>
+                  <li><a href="contact.html">Cotact Us</a></li>
+                </ul>
+              </li>
+              <li class="menuItem"><a href="faqs.html">FAQ's</a></li>
+              <li class="appointment menuItem">
+                <a href="requestAppointment.html">Request Appointment</a>
+              </li>
             </ul>
-          </li>
-          <li class="menuItem"><a href="faqs.html">FAQ's</a></li>
-          <li class="appointment menuItem">
-            <a href="requestAppointment.html">Request Appointment</a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <section class="ownersInfoSection">
-      <div class="ownersInfoCon">
-        <h1>Owners Information</h1>
-        <div class="ownersItems">
-          <div class="ownerInfoItem">
-            <div class="ownerInfoItemCon">
-              <div class="imgDiv">
-                <img src="imgs/aboutUs/arsalan2.jpg" alt="arsalan-img" />
-              </div>
-              <div class="detail">
-                <h2>Arsalan Chief Mechanical Engineer</h2>
-                <p>
-                  SAAR Auto Repair Workshop's Chief Mechanical Engineer. With a
-                  wealth of automotive engineering experience, Arsalan ensures
-                  top-quality care for every vehicle. Trust Arsalan and the SAAR
-                  team for expert automotive service.
-                </p>
-                <div class="OwnerContact">
-                  <a href="mailto:abc@gmail.com"
-                    ><i class="fa-regular fa-envelope"></i>
-                    <h4>Contact Arsalan</h4></a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ownerInfoItem">
-            <div class="ownerInfoItemCon">
-              <div class="imgDiv">
-                <img src="imgs/aboutUs/salman.jpg" alt="arsalan-img" />
-              </div>
-              <div class="detail">
-                <h2>Salman Mechanical Engineer</h2>
-                <p>
-                  Mechanical Engineer at SAAR Auto Repair Workshop. With his
-                  adept hands and innovative mindset, Salman guarantees superior
-                  care for your vehicle. Count on Salman and the SAAR team for
-                  unparalleled automotive expertise.
-                </p>
-                <div class="OwnerContact">
-                  <a href="mailto:abc@gmail.com"
-                    ><i class="fa-regular fa-envelope"></i>
-                    <h4>Contact Salman</h4></a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="ownerInfoItem">
-            <div class="ownerInfoItemCon">
-              <div class="imgDiv">
-                <img src="/imgs/servicesImages/naeem5.jpg" alt="arsalan-img" />
-              </div>
-              <div class="detail">
-                <h2>Naeem Mechanical Engineer</h2>
-                <p>
-                  Mechanical Engineer at SAAR Auto Repair Workshop. With his
-                  technical prowess and dedication to excellence, Naeem ensures
-                  your vehicle receives top-tier care. Trust Naeem and the SAAR
-                  team for exceptional automotive service tailored to your
-                  needs.
-                </p>
-                <div class="OwnerContact">
-                  <a href="mailto:abc@gmail.com"
-                    ><i class="fa-regular fa-envelope"></i>
-                    <h4>Contact Naeem</h4></a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
+          </nav>
         </div>
       </div>
-    </section>
-    <footer>
-      <div class="upperFooter">
-        <div class="footerSection1">
-          <div class="logoText">
-            SAAR<span class="smallText"><br />AUTO REPAIR SERVICE</span>
+      <header>
+        <div class="topHeader">
+          <div class="logo">
+            <a href="index.html"
+              ><img src="imgs/logo5.png" alt="logo" width="300px"
+            /></a>
           </div>
-          <ul class="socialLinks">
-            <li>
-              <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+          <div class="contact">
+            <i class="fa-solid fa-phone"></i>
+            <a href="tel:03489220242">0348-9220242</a>
+          </div>
+          <div class="workingHrs">
+            <div class="workingHrsHeading">
+              <span>Working Hours</span><br />
+              <span><i class="fa-solid fa-clock"></i> 8:00AM-6:00PM</span
+              >&nbsp;<i class="fa-solid fa-caret-down"></i>
+            </div>
+            <div class="workingDays">
+              <div class="day1">Mon <br /><span>8:00AM-6:00PM</span></div>
+              <div class="day2">Tue <br /><span>8:00AM-6:00PM</span></div>
+              <div class="day3">Wed <br /><span>8:00AM-6:00PM</span></div>
+              <div class="day4">Thu <br /><span>8:00AM-6:00PM</span></div>
+              <div class="day5">Fri <br /><span>Closed</span></div>
+              <div class="day6">Sat <br /><span>8:00AM-6:00PM</span></div>
+              <div class="day7">Sun <br /><span>8:00AM-6:00PM</span></div>
+            </div>
+          </div>
+          <div>
+            <ul class="socialLinks">
+              <li>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-regular fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <nav id="navbar">
+          <ul class="menu">
+            <span id="menuToggler" class="menuBtnDispNone"
+              ><i class="fa-solid fa-angles-up" id="menuIcon"></i
+            ></span>
+            <li class="menuItem"><a href="index.html">Home</a></li>
+            <li class="menuItem">
+              <a href="allServices.html">Services</a
+              ><i class="fa-solid fa-caret-down"></i>
+              <ul class="menuSubItem">
+                <li><a href="allServices.html">All Services</a></li>
+                <li><a href="engineService.html">Engine Repair</a></li>
+                <li><a href="AC repair.html">Auto A/C Repair</a></li>
+                <li><a href="batteryService.html">Battery Service</a></li>
+                <li><a href="oilChange.html">Oil Change</a></li>
+                <li><a href="brakeRepair.html">Brake Service</a></li>
+                <li><a href="wheelServices.html">Wheel Alignment</a></li>
+              </ul>
             </li>
-            <li>
-              <a href=""><i class="fa-brands fa-facebook"></i></a>
+            <li class="menuItem">
+              <a href="">Vehicles</a><i class="fa-solid fa-caret-down"></i>
+              <ul class="menuSubItem">
+                <li><a href="toyotaService.html">toyota Service</a></li>
+                <li><a href="suzukiService.html">Suzuki Service</a></li>
+                <li><a href="hondaService.html">Honda Service</a></li>
+                <li><a href="hyundaiService.html">Hyudai Service</a></li>
+                <li><a href="bmwService.html">Bmw Service</a></li>
+                <li><a href="AudiService.html">AudiService</a></li>
+                <li><a href="hummerService.html">Hummer Service</a></li>
+              </ul>
             </li>
-            <li>
-              <a href=""><i class="fa-regular fa-envelope"></i></a>
+            <li class="menuItem activeItem">
+              <a href="">About Us</a><i class="fa-solid fa-caret-down"></i>
+              <ul class="menuSubItem">
+                <li class="activeSubItem">
+                  <a href="ownersInfo.html">Owners Info</a>
+                </li>
+                <li><a href="contact.html">Cotact Us</a></li>
+              </ul>
+            </li>
+            <li class="menuItem"><a href="faqs.html">FAQ's</a></li>
+            <li class="appointment menuItem">
+              <a href="requestAppointment.html">Request Appointment</a>
             </li>
           </ul>
-        </div>
-        <div class="footerSection2">
-          <div class="address">
-            <i class="fa-solid fa-location-dot"></i
-            ><span class="footer2Hdng">Address</span><br />
-            <p>Near General Bus Stand Timergara, Dir Lower, KPK, Pakistan.</p>
-          </div>
-          <div class="footerHrs">
-            <div class="">
-              <span
-                ><i class="fa-solid fa-clock"></i
-                ><span class="footer2Hdng">Working Hours</span></span
-              ><br />
-              <p>
-                Sat-Thu | 8:00AM-6:00PM<br />
-                <span>Closed on Friday</span>
-              </p>
+        </nav>
+      </header>
+      <section class="ownersInfoSection">
+        <div class="ownersInfoCon">
+          <h1>Owners Information</h1>
+          <div class="ownersItems">
+            <div class="ownerInfoItem">
+              <div class="ownerInfoItemCon">
+                <div class="imgDiv">
+                  <img src="imgs/aboutUs/arsalan2.jpg" alt="arsalan-img" />
+                </div>
+                <div class="detail">
+                  <h2>Arsalan Chief Mechanical Engineer</h2>
+                  <p>
+                    SAAR Auto Repair Workshop's Chief Mechanical Engineer. With
+                    a wealth of automotive engineering experience, Arsalan
+                    ensures top-quality care for every vehicle. Trust Arsalan
+                    and the SAAR team for expert automotive service.
+                  </p>
+                  <div class="OwnerContact">
+                    <a href="mailto:abc@gmail.com"
+                      ><i class="fa-regular fa-envelope"></i>
+                      <h4>Contact Arsalan</h4></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ownerInfoItem">
+              <div class="ownerInfoItemCon">
+                <div class="imgDiv">
+                  <img src="imgs/aboutUs/salman.jpg" alt="arsalan-img" />
+                </div>
+                <div class="detail">
+                  <h2>Salman Mechanical Engineer</h2>
+                  <p>
+                    Mechanical Engineer at SAAR Auto Repair Workshop. With his
+                    adept hands and innovative mindset, Salman guarantees
+                    superior care for your vehicle. Count on Salman and the SAAR
+                    team for unparalleled automotive expertise.
+                  </p>
+                  <div class="OwnerContact">
+                    <a href="mailto:abc@gmail.com"
+                      ><i class="fa-regular fa-envelope"></i>
+                      <h4>Contact Salman</h4></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="ownerInfoItem">
+              <div class="ownerInfoItemCon">
+                <div class="imgDiv">
+                  <img
+                    src="/imgs/servicesImages/naeem5.jpg"
+                    alt="arsalan-img"
+                  />
+                </div>
+                <div class="detail">
+                  <h2>Naeem Mechanical Engineer</h2>
+                  <p>
+                    Mechanical Engineer at SAAR Auto Repair Workshop. With his
+                    technical prowess and dedication to excellence, Naeem
+                    ensures your vehicle receives top-tier care. Trust Naeem and
+                    the SAAR team for exceptional automotive service tailored to
+                    your needs.
+                  </p>
+                  <div class="OwnerContact">
+                    <a href="mailto:abc@gmail.com"
+                      ><i class="fa-regular fa-envelope"></i>
+                      <h4>Contact Naeem</h4></a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div class="address">
-            <i class="fa-solid fa-phone"></i
-            ><span class="footer2Hdng">Contact Us</span><br />
-            <p><a href="tel:03489220242">0348-9220242</a></p>
+        </div>
+      </section>
+      <footer>
+        <div class="upperFooter">
+          <div class="footerSection1">
+            <div class="logoText">
+              SAAR<span class="smallText"><br />AUTO REPAIR SERVICE</span>
+            </div>
+            <ul class="socialLinks">
+              <li>
+                <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+              </li>
+              <li>
+                <a href=""><i class="fa-regular fa-envelope"></i></a>
+              </li>
+            </ul>
+          </div>
+          <div class="footerSection2">
+            <div class="address">
+              <i class="fa-solid fa-location-dot"></i
+              ><span class="footer2Hdng">Address</span><br />
+              <p>Near General Bus Stand Timergara, Dir Lower, KPK, Pakistan.</p>
+            </div>
+            <div class="footerHrs">
+              <div class="">
+                <span
+                  ><i class="fa-solid fa-clock"></i
+                  ><span class="footer2Hdng">Working Hours</span></span
+                ><br />
+                <p>
+                  Sat-Thu | 8:00AM-6:00PM<br />
+                  <span>Closed on Friday</span>
+                </p>
+              </div>
+            </div>
+            <div class="address">
+              <i class="fa-solid fa-phone"></i
+              ><span class="footer2Hdng">Contact Us</span><br />
+              <p><a href="tel:03489220242">0348-9220242</a></p>
+            </div>
+          </div>
+          <div class="footerSection3">
+            <div>Quick Links</div>
+            <ul>
+              <li><a href="allServices.html">Services</a></li>
+              <li><a href="toyotaService.html">Vehicles</a></li>
+              <li><a href="ownersInfo.html">About Us</a></li>
+              <li><a href="faqs.html">FAQ's</a></li>
+            </ul>
+          </div>
+          <div class="footerSection4">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.3203295988874!2d71.83820663874663!3d34.82270020071062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dbf3c97a6ea9d9%3A0xc4fc67209af41b01!2sGeneral%20Bus%20Stand%20Timergara!5e0!3m2!1sen!2s!4v1714825296338!5m2!1sen!2s"
+              width="300"
+              height="200"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
           </div>
         </div>
-        <div class="footerSection3">
-          <div>Quick Links</div>
-          <ul>
-            <li><a href="allServices.html">Services</a></li>
-            <li><a href="toyotaService.html">Vehicles</a></li>
-            <li><a href="ownersInfo.html">About Us</a></li>
-            <li><a href="faqs.html">FAQ's</a></li>
-          </ul>
-        </div>
-        <div class="footerSection4">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1503.3203295988874!2d71.83820663874663!3d34.82270020071062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x38dbf3c97a6ea9d9%3A0xc4fc67209af41b01!2sGeneral%20Bus%20Stand%20Timergara!5e0!3m2!1sen!2s!4v1714825296338!5m2!1sen!2s"
-            width="300"
-            height="200"
-            style="border: 0"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade"
-          ></iframe>
-        </div>
-      </div>
-      <div class="lowerFooter">
-        <hr />
-        <div class="lowerFooterContent">
-          <div class="developersInfo">
-            <span>Developed by: </span
-            ><a
-              href="imgs/Salman-Ud-Din-Front-End-Developer.pdf"
-              target="_blank"
-              >Salman</a
-            ><a href="imgs/Arsalan-Khan-Front-End-Developer.pdf" target="_blank"
-              >Arsalan</a
-            ><a href="imgs/Naeem-ullah.pdf" target="_blank">Naeem</a>
-          </div>
-          <div class="copyRight">
-            &copy; SAAR auto workshop. All rights reserved.
+        <div class="lowerFooter">
+          <hr />
+          <div class="lowerFooterContent">
+            <div class="developersInfo">
+              <span>Developed by: </span
+              ><a
+                href="imgs/Salman-Ud-Din-Front-End-Developer.pdf"
+                target="_blank"
+                >Salman</a
+              ><a
+                href="imgs/Arsalan-Khan-Front-End-Developer.pdf"
+                target="_blank"
+                >Arsalan</a
+              ><a href="imgs/Naeem-ullah.pdf" target="_blank">Naeem</a>
+            </div>
+            <div class="copyRight">
+              &copy; SAAR auto workshop. All rights reserved.
+            </div>
           </div>
         </div>
-      </div>
-    </footer>
+      </footer>
+    </div>
 
     <script src="script.js"></script>
   </body>

@@ -57,10 +57,7 @@
 .serviceImg a i{
     padding-bottom: 3px;
 }
-/* #companyWiseBody{
-    overflow: hidden;
-    width: 100vw;
-} */
+
 
 /* media queries */
 @media screen and ((min-width:451px) and (max-width:768px)){
